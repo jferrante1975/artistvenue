@@ -9,3 +9,5 @@ El sitio está destinado a dueños, managers, organizadores de eventos, y/o cual
 ## Integrantes del equipo de desarrollo:
 **Javier Ferrante:** edad 47, vivo en Argentina - Buenos Aires, me gusta el deporte en general y la música, practico futbol, trekking y carreras de aventura.  
 Profesión: Desarrollador Full Stack.
+**Carlos Parra:** edad 39, vivo en Curacao, actualmente ejerciendo curso de Full Stack Node en Digital House, musico.
+Profesión: Administrador en Ciencias Gerenciales y Administrativas.
