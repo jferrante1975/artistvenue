@@ -12,3 +12,6 @@ Profesión: Desarrollador Full Stack.
 
 **Carlos Parra:** edad 39, vivo en Curacao, actualmente ejerciendo curso de Full Stack Node en Digital House, musico.
 Profesión: Administrador en Ciencias Gerenciales y Administrativas.
+
+## Sitios Web de refrencia:
+**https://concerfy.com/**
