@@ -21,3 +21,5 @@ Profesión: Administrador en Ciencias Gerenciales y Administrativas.
 **https://www.portaldeartistas.cl/**
 
 **https://espectaculosmusic.com/categoria/rock/**
+
+**https://www.entertainersworldwide.com/live-bands/us**
