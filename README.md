@@ -15,7 +15,7 @@ Profesión: Administrador en Ciencias Gerenciales y Administrativas.
 
 **Diego Pulido:** edad 31, vivo en Bogotá - Colombia, Me gusta bailar y viajar. Soy Administrador de Empresas
 
-**Maier CR:** edad 40, vivo en Stafford, TX - USA, soy ingeniero de sistemas en búsqueda permanente de conocimiento.
+**Maier CR:** edad 40, vivo en Stafford, TX - USA, soy un ingeniero de sistemas en búsqueda permanente de conocimiento.
 
 ## Sitios Web de referencia:
 
