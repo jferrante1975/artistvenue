@@ -13,6 +13,8 @@ Profesión: Desarrollador Full Stack.
 **Carlos Parra:** edad 39, vivo en Curacao, actualmente ejerciendo curso de Full Stack Node en Digital House, musico.
 Profesión: Administrador en Ciencias Gerenciales y Administrativas.
 
+**Diego Pulido:** edad 31, vivo en Bogotá - Colombia, Me gusta bailar y viajar. Soy Administrador de Empresas 
+
 ## Sitios Web de referencia:
 
 **https://concerfy.com/**
