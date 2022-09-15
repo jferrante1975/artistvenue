@@ -10,6 +10,11 @@ app.get('/', (req,res) => {
 
 })
 
+app.get("/Template", function (req, res) {
+  let htmlPath = path.resolve(__dirname, "./src/views/Template.html");
+  res.sendFile(htmlPath);
+});
+
 app.listen(3030, () => {
     console.log('Inicializado el servidor');
 })
