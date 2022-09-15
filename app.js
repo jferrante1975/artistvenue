@@ -6,12 +6,12 @@ app.use(express.static('public'))
 
 app.get('/', (req,res) => {
 
-    res.sendFile(path.join(__dirname, './src/views/home.html'));
+    res.sendFile(path.join(__dirname, './src/views/pages/home.html'));
 
 })
 
 app.get("/Template", function (req, res) {
-  let htmlPath = path.resolve(__dirname, "./src/views/Template.html");
+  let htmlPath = path.resolve(__dirname, "./src/views/partials/Template.html");
   res.sendFile(htmlPath);
 });
 
