@@ -1,0 +1,18 @@
+h1{ 
+    text-align: center;
+    color: rgb(200, 80, 0);
+    width: 100%;
+    font-size: 20px;}
+
+.parrafo {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+}
+p {  
+    
+    margin: 10px;
+    color: rgb(200, 80, 0);
+    font-size: 10px;
+    
+}
