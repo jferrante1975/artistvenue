@@ -16,6 +16,11 @@ app.get('/register', (req,res) => {
 
 })
 
+app.get('/login', (req,res) => {
+
+    res.sendFile(path.join(__dirname, './src/views/login.html'));
+})
+
 app.get("/Template", function (req, res) {
   let htmlPath = path.resolve(__dirname, "./src/views/partials/Template.html");
   res.sendFile(htmlPath);
