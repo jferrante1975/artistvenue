@@ -7,6 +7,19 @@
     <title>Artist Venue</title>
 </head>
 <body>
+    <header>
+    </header>
+
+    <h1>Bienvenidos de Nuevo a Artist Venue</h1>
+    <h2>Iniciar Sesión</h2>
     
+    <main class="login">
+        <form action="/login" method="POST">
+            <input type="text" name="user" placeholder="Ingresa su nombre de usuario o correo electronico*" minlength="12">
+            <input type="password" name="pass" placeholder="Contraseña">
+            <button type="submit">Iniciar sesión</button>
+            <label><input type="radio" name="recuerdame" value="si">recuerdame</label>
+        </form>
+    </main>
 </body>
 </html>
