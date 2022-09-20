@@ -1,28 +1,25 @@
 body{
-    background-repeat: no-repeat;
-    background-position-x: 35% ;
-    background-position-y: 20%;
-
-    background-image: url('./images/guitarra.jpg');
+    background-image: url('/images/guitarra.png');
+    background-repeat: no-repeat
 }
-h1{ 
-    text-align: center;
-    color: rgb(200, 80, 0);
-    width: 100%;
-    font-size: 40px;}
-
 .parrafo {
-    height: 50px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    align-items: flex-end; 
 }
-p {  
-    width: 50%;
-    margin: 10px;
-    color: rgb(200, 80, 0);
-    font-size: 30px;
-    text-align: left;
 
+h1{ 
+    color:orange;
+    font-size: 40px;
+    margin-right: 100px;
+}
+
+p {  
+    width: 30%;
+    margin: 10px;
+    color: orange;
+    font-size: 30px;
+    margin-right: 115px;
 }
 
 .listaItems li{
@@ -30,6 +27,62 @@ p {
     margin-top: 40px;
     font-weight: bold;
 }
-ul{
-    list-style-image: url('/public/images/guitarra.jpg'); 
+
+.formulario{
+    margin-right: 200px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    /* background-color: aqua;  */
 }
+
+.formulario input{
+    align-self:flex-end;
+}
+
+.radio{
+    margin: 0px;
+    padding: 0px;
+       
+  }
+  label{
+    color: orange;
+
+  }
+
+  .regpro {
+        display: flex; 
+        justify-content: right;
+        vertical-align: middle;
+        margin-top: 30px;
+        margin-right: 180px;
+    }
+
+   .regpro input{
+    margin-right: 20px;
+    padding: 0px;
+
+    }
+
+    .contregtxt{
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 20px;
+    }
+
+    .regtxt{
+        width: 38%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 12px;
+        
+    }
+
+    .regtxt label{
+        margin-top: 12px;
+    }
+
