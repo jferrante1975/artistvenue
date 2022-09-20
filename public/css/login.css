@@ -1,0 +1,18 @@
+.top-header {
+        background-color: black;
+        padding: 50px;
+        box-sizing: border-box;
+      }
+
+
+.Bienvenidos{ 
+    text-align: left;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    font-size: 20px;}
+
+.footer{
+    background-color: black;
+    padding: 50px;
+    box-sizing: border-box;
+}
