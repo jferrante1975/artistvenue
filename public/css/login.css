@@ -1,18 +1,30 @@
 .top-header {
-        background-color: black;
-        padding: 50px;
-        box-sizing: border-box;
-      }
+  background-color: black;
+  padding: 50px;
+  box-sizing: border-box;
+}
 
-
-.Bienvenidos{ 
-    text-align: left;
-    color: rgb(0, 0, 0);
-    width: 100%;
-    font-size: 20px;}
-
-.footer{
-    background-color: black;
-    padding: 50px;
-    box-sizing: border-box;
+.Bienvenidos {
+  text-align: left;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  font-size: 20px;
+}
+.iniciar-sesion {
+    text-align: center;
+    margin-top: 15px;
+    background-color: rgb(46, 46, 241);
+    margin-bottom: 15px;
+    border: 1px dashed black;
+    padding-left: 12px;
+    width: 10%;
+    padding-top: 30px;
+    margin-right: 60%;
+    padding-bottom: 30px;
+    box-sizing: border-box
+}
+.footer {
+  background-color: black;
+  padding: 50px;
+  box-sizing: border-box;
 }
