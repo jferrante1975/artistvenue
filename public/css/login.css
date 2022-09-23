@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+
+
 .top-header {
     background-color: black;
     padding: 50px;
@@ -6,22 +17,43 @@
 
 .Bienvenidos {
     text-align: left;
-    color: rgb(0, 0, 0);
+    font-size: 18%;
+    color: blue;
     width: 100%;
     font-size: 20px;
 }
 
+.top-header2 {
+    text-align: left;
+    color: orange;
+}
+
+.button a {
+    background: #2696e9;
+    padding: 15px 35px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
 .iniciar-sesion {
     text-align: center;
+    color: orange;
     margin-top: 15px;
     background-color: rgb(46, 46, 241);
     margin-bottom: 15px;
     padding-left: 12px;
-    width: 10%;
+    width: 50%;
     padding-top: 30px;
     margin-right: 60%;
     padding-bottom: 30px;
     box-sizing: border-box
+}
+
+.fa-brands fa-facebook {
+    background-color: black;
 }
 
 .footer {
