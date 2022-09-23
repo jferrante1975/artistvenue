@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Venue</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <header>
+        <div class="top-header"> </div>
+        <div class="Bienvenidos">
+           <h1>Bienvenidos de Nuevo a Artist Venue</h1> 
+        </div>
+    </header>
+    <div class="top-header2">
+        <h2>Iniciar Sesión</h2>
+    </div>
+    
+
+    <main class="login">
+        <form action="/login" method="POST">
+            <div class="Ingresa">
+                <label for="Ingresa">Ingresa tu nombre o correo electronico</label>
+                <input type="text" name="user" id="correo" minlength="12" />
+            </div>
+            <div class="password">
+                <label for="password">Contraseña</label>
+                <input type="password" name="pass" id="password" />
+            </div>
+            <div class="iniciar-sesion">
+                <button type="submit">Iniciar sesión</button>
+            </div>
+
+            <div>
+                <label><input type="radio" name="recuerdame" value="si" />recuerdame</label>
+            </div>
+            <div class="olvidaste">
+                <label for="olvidaste">Olvidaste tu Contraseña?</label>
+                <button type="submit"> Si lo olvide</button>
+                <p>© 2022 Política de privacidad</p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer"></div>
+    </footer>
+</body>
+
+</html>
