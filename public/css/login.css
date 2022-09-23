@@ -16,7 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 12px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: black;
 }
 
 header .brand {
@@ -91,7 +91,7 @@ header .navigation .navigation-items a:before {
 }
 
 .footer {
-    background-color: #00000080;
+    background-color:black;
     padding: 30px;
     box-sizing: border-box;
 }
