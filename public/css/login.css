@@ -7,25 +7,59 @@
     box-sizing: border-box;
 }
 
+header {
+    z-index: 999;
 
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-.top-header {
-    background-color: black;
-    padding: 50px;
-    box-sizing: border-box;
+header .brand {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header .navigation {
+    display: none;
+}
+
+header .navigation .navigation-items a {
+    color: #222;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+header .navigation .navigation-items a:before {
+    background: #222;
+    height: 5px;
+}
+.menu-btn {
+    background: url(/images/menu.png) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .Bienvenidos {
     text-align: left;
-    font-size: 18%;
-    color: blue;
+    font-size: 50%;
+    color: black;
     width: 100%;
-    font-size: 20px;
 }
 
 .top-header2 {
     text-align: left;
-    color: orange;
+    color: black;
 }
 
 .button a {
@@ -40,7 +74,7 @@
 
 .iniciar-sesion {
     text-align: center;
-    color: orange;
+    color: black;
     margin-top: 15px;
     background-color: rgb(46, 46, 241);
     margin-bottom: 15px;
@@ -57,7 +91,7 @@
 }
 
 .footer {
-    background-color: black;
-    padding: 50px;
+    background-color: #00000080;
+    padding: 30px;
     box-sizing: border-box;
 }
