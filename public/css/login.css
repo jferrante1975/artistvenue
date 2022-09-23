@@ -9,14 +9,16 @@
 
 header {
     z-index: 999;
-
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 20px;
     background-color: black;
+    position: fixed;
 }
 
 header .brand {
@@ -51,10 +53,11 @@ header .navigation .navigation-items a:before {
 }
 
 .Bienvenidos {
-    text-align: left;
-    font-size: 50%;
-    color: black;
-    width: 100%;
+        padding: 80px;
+        padding-bottom: 40px;
+        text-align: center;
+        font-size: 1em;
+      
 }
 
 .top-header2 {
