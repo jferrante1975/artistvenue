@@ -1,88 +1,74 @@
-body{
-    background-image: url('/images/guitarra.png');
-    background-repeat: no-repeat
+body {
+    background-image: url('/images/guitar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
-.parrafo {
+
+.classBody {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; 
+    align-items: center;
 }
 
-h1{ 
-    color:orange;
-    font-size: 40px;
-    margin-right: 100px;
-}
-
-p {  
-    width: 30%;
-    margin: 10px;
-    color: orange;
-    font-size: 30px;
-    margin-right: 115px;
-}
-
-.listaItems li{
-    color: rgb(200, 80, 0);
-    margin-top: 40px;
-    font-weight: bold;
-}
-
-.formulario{
-    margin-right: 200px;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; 
-    /* background-color: aqua;  */
-}
-
-.formulario input{
-    align-self:flex-end;
-}
-
-.radio{
+.bodyTitulo {
+    color: white;
+    text-align: center;
+    padding: 0px;
     margin: 0px;
+ }
+
+ .bodyTitulo h1{
+    font-size: 50px;
+ }
+
+ .bodyParrafo {
+    color: white;
+    width: 42%;
+    position: relative;
+    text-align: center;
+}
+
+.bodyParrafo p{
     padding: 0px;
-       
-  }
-  label{
-    color: orange;
+    margin: 0px;
+    font-size: 21px;
+}
 
-  }
+.regpro{
+    margin-right: 150px;
+    margin-top: 25px;
+    align-self: right;
+    text-align: right;
+    color: white;
+    margin-bottom: 10px;
+}
+.regtxt{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color: white;
+    margin-right: 200px;
+}
 
-  .regpro {
-        display: flex; 
-        justify-content: right;
-        vertical-align: middle;
-        margin-top: 30px;
-        margin-right: 180px;
-    }
-
-   .regpro input{
-    margin-right: 20px;
-    padding: 0px;
-
-    }
-
-    .contregtxt{
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: 20px;
-    }
-
-    .regtxt{
-        width: 38%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 12px;
+.regtxt label{
+    align-self: flex-end;
+    width: 20%;
+    margin-top: 10px;
+    
+}
+.regtxt input{
+    align-self: flex-end;
+    width: 20%;
         
-    }
+}
 
-    .regtxt label{
-        margin-top: 12px;
-    }
-
+button{
+    margin-top: 15px;
+    align-self:flex-end;
+    border-radius: 6px;
+    background-color: lightblue;
+    margin-right: 150px;
+    
+}
