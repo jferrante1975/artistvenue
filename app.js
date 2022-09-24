@@ -27,6 +27,12 @@ app.get('/productDetail', (req,res) => {
 
 })
 
+app.get('/car', (req,res) => {
+
+    res.sendFile(path.join(__dirname, './src/views/car.html'));
+
+})
+
 app.listen(3030, () => {
     console.log('Inicializado el servidor');
 })
