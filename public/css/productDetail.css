@@ -20,14 +20,12 @@ header {
   transition: 0.5s ease;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
-  /* background-color:  #2696e9; */
 }
 
 header .brand {
   color: #fff;
   font-size: 1.5em;
   font-weight: 700;
-  /*text-transform: uppercase;*/
   text-decoration: none;
 }
 
@@ -94,9 +92,8 @@ header .navigation.active .navigation-items {
 }
 
 .product {
-    padding: 20px 20px;
+    padding: 10px 10px;
   }
-
  
   section .container {
     justify-content: center;
@@ -105,7 +102,7 @@ header .navigation.active .navigation-items {
   }
   
   section.videos {
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .container {
     position: relative;
@@ -115,25 +112,19 @@ header .navigation.active .navigation-items {
   }
   
   .container .box {
+    margin-top: 50px;
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
-    transition: 0.5s;
   }
-  
-  .container .box:hover {
-    z-index: 1;
-    transform: scale(1.25);
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
-  }
-  
+    
   .container .box .imgBox {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
   }
   
   .container .box .imgBox img {
@@ -156,11 +147,6 @@ header .navigation.active .navigation-items {
     background: linear-gradient(180deg, #2696e9, #000);
     mix-blend-mode: multiply;
     opacity: 0;
-    transition: 0.5s;
-  }
-  
-  .container .box:hover .imgBox:before {
-    opacity: 1;
   }
   
   .container .box .content {
@@ -171,7 +157,7 @@ header .navigation.active .navigation-items {
     height: 100%;
     z-index: 2;
     display: flex;
-    padding: 20px;
+    padding: 10px;
     align-items: flex-end;
   }
   
@@ -181,79 +167,34 @@ header .navigation.active .navigation-items {
     text-transform: uppercase;
     margin-bottom: 5px;
     font-size: 20px;
-    transform: translateY(200px);
-  }
-  
-  .container .box:hover .content h2 {
-    transform: translateY(0);
-    transition-delay: 0.6s;
   }
   
   .container .box .content p {
     color: #fff;
-    transform: translateY(200px);
     transition: 0.5s;
     font-size: 14px;
   }
-  
-  .container .box:hover .content p {
-    transform: translateY(0);
-    transition-delay: 0.7s;
-  }
-  
+ 
   .container .box .content a {
     text-decoration: none;
   }
-  
-  .container .box .content a {
-    transform: translateY(0);
-    transition-delay: 0.6s;
-  }
+ 
 
   .container .box {
-    width: 275px;
-    height: 275px;
+    width: 150px;
+    height: 150px;
   }
 
-/*
-.product{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
 
-.product div{
-    
-    border: 1px solid gray;
-    box-sizing: 1px;
-    padding: 10px;
-    
-}
-
-.product div img{
-    height: 120px;
-    width: 120px;
-}
-
-.product div p{
-    
-    width: 100%;
-}
-
-.product div video{
-    height: 120px;
-    width: 120px;
-}
-*/
 @media (min-width: 768px) {
   header {
-    padding: 12px 50px;
+    padding: 12px 10px;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
   }
 
   section {
-    padding: 100px 20px;
+    padding: 10px 10px;
   }
 
   .home .media-icons {
@@ -383,8 +324,7 @@ header .navigation.active .navigation-items {
     font-weight: 500;
     text-decoration: none;
     margin-left: 30px;
-    transition: 0.3s ease;
-  }
+ }
 
   header .navigation .navigation-items a:before {
     content: "";
@@ -396,11 +336,11 @@ header .navigation.active .navigation-items {
     left: 0;
     transition: 0.3s ease;
   }
-
+/*
   header .navigation .navigation-items a:hover:before {
     width: 100%;
   }
-
+*/
   .hidden {
     display: block;
   }
