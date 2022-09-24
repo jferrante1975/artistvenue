@@ -21,6 +21,11 @@ app.get('/login', (req,res) => {
     res.sendFile(path.join(__dirname, './src/views/login.html'));
 })
 
+app.get('/productDetail', (req,res) => {
+
+    res.sendFile(path.join(__dirname, './src/views/productDetail.html'));
+
+})
 
 app.listen(3030, () => {
     console.log('Inicializado el servidor');
