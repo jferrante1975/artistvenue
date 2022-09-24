@@ -57,13 +57,14 @@ header .navigation .navigation-items a:before {
     padding: 80px;
     padding-bottom: 40px;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.80em;
 }
 
 .top-header2 {
     padding-top: 50px, 85px, 10px, 10px;
     text-align: center;
     color: black;
+    font-size: 0.80em ;
 }
 
 .Ingresa {
@@ -115,7 +116,7 @@ text-align: center;
     box-sizing: border-box;
 }
 
-.fa-brands fa-facebook {
+.facebook{
     background-color: black;
 }
 .olvidaste{
@@ -125,10 +126,10 @@ text-align: center;
 .politica{
     font-size: 15px;
     padding: 10px;
+    padding-top: 80px;
 }
 
 .footer {
     background-color: black;
     padding: 30px;
-    box-sizing: border-box;
 }

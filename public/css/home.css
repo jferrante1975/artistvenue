@@ -369,8 +369,8 @@ section .container {
 }
 
 .bookings {
-  background-color:#000000;
-  width:100%;
+  background-color: #000000;
+  width: 100%;
   padding: 10px;
   text-align: center;
   color: white;
@@ -379,7 +379,6 @@ section .container {
 .trends {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .icons-booking {
@@ -390,14 +389,11 @@ section .container {
   padding-top: 30px;
   padding-bottom: 20px;
   font-size: 28px;
-
 }
 
 .members {
-
   padding: 20px 10px 30px;
   font-size: 20px;
-
 }
 
 .img-schedule {
@@ -421,7 +417,7 @@ section .container {
 }
 
 .register {
-  background: url(/images/bandblack.jpg);
+  background: url(/images/home-img/bandblack.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   text-align: center;
@@ -455,7 +451,6 @@ section .container {
 
 .register-text {
   width: 90%;
-  border: white;
   border: 1px white solid;
   border-radius: 10px;
   margin-bottom: 40px;
@@ -463,14 +458,9 @@ section .container {
 
 .register-text2 {
   width: 90%;
-  border: white;
   border: 1px white solid;
   border-radius: 10px;
   margin-bottom: 10px;
-}
-
-section.videos {
-  padding-top: 20px;
 }
 
 div.video-container {
@@ -478,20 +468,98 @@ div.video-container {
   flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+}
 
-
+div.video-container h2::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f35a";
+  color: gray;
+  padding-left: 5px;
 }
 
 div.video-container h2 a {
+  font-size: 1em;
+  font-weight: 700;
+  /*text-transform: uppercase;*/
+  text-decoration: none;
+  color: rgb(100, 97, 97);
+}
+
+.video-artist {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* border: 1px solid #c4c1c1; */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.data-artist img {
+  width: 0.9em;
+}
+
+.data-artist h5 {
+  font-size: 0.75em;
+  color: rgb(160, 160, 160);
+  display: inline-block;
+}
+
+.data-artist p {
+  font-size: 14px;
+}
+
+.data-artist span {
   font-size: 20px;
+  font-weight: 500;
 }
 
-
-.video {
-  
+.data-artist iframe {
+  width: 100%;
 }
 
+.div-artist {
+  display: none;
+}
+
+.btnProfile {
+  text-align: center;
+  display: inline-block;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btnProfile a {
+  background: white;
+  color: black;
+  padding: 10px 10px;
+  font-size: 0.8em;
+  text-decoration: none;
+  border: #000 solid 0.5px;
+  border-radius: 2px;
+}
+
+.btnToHire {
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.btnToHire a {
+  background: #2696e9;
+  color: white;
+  padding: 10px 10px;
+  font-size: 0.8em;
+  text-decoration: none;
+  border: #2696e9 solid 0.5px;
+  border-radius: 2px;
+}
 
 footer {
   margin-top: 60px;
@@ -509,10 +577,6 @@ footer p {
     padding: 12px 50px;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
-  }
-
-  section {
-    padding: 100px 20px;
   }
 
   .home .media-icons {
@@ -620,7 +684,6 @@ footer p {
   .icons-booking {
     width: 33.33%;
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -726,5 +789,38 @@ footer p {
 
   .icons-booking {
     width: 33.33%;
+  }
+
+  .data-artist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #c4c1c1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .iframe-div {
+    display: inline-block;
+    padding-left: 20px;
+    align-content: center;
+    order: 3;
+  }
+
+  .description {
+    display: inline-block;
+    order: 2;
+  }
+
+  .div-artist {
+    display: inline-block;
+    order: 1;
+  }
+
+  .div-artist img {
+    width: 190px;
+    padding-right: 20px;
   }
 }
