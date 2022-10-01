@@ -1,9 +1,13 @@
 body {
+    width: vh;
+    height: vh;
     background-image: url('/images/guitar.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
 }
 
 .classBody {
@@ -36,40 +40,41 @@ body {
     font-size: 21px;
 }
 
+.divFormulario{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 200px;
+    margin-top: 15px;
+}
+
 .regpro{
-    margin-right: 150px;
-    margin-top: 25px;
-    align-self: right;
-    text-align: right;
+    margin-top: 10px;
     color: white;
-    margin-bottom: 10px;
+    
 }
 .regtxt{
+    margin-top: 10px;
+    margin-right: 80px;
+    width: 20%;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    justify-content: left;
+    align-items: left;
     color: white;
-    margin-right: 200px;
 }
 
 .regtxt label{
-    align-self: flex-end;
-    width: 20%;
     margin-top: 10px;
-    
-}
-.regtxt input{
-    align-self: flex-end;
-    width: 20%;
-        
 }
 
 button{
-    margin-top: 15px;
-    align-self:flex-end;
+    margin-top: 10px;
+    margin-right: 80px;
     border-radius: 6px;
-    background-color: lightblue;
-    margin-right: 150px;
-    
+    background-color: blue;
+    color: white;
+   
 }
 
