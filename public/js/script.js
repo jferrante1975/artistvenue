@@ -14,8 +14,7 @@ window.onload = function () {
     window.innerWidth;
   var targetWidth = 1024;
   if (w >= targetWidth) {
-    //Add your javascript for screens wider than or equal to 768 here.
-    //Javascript for manual video slider navigation
+
     const btns = document.querySelectorAll(".nav-btn");
     const slides = document.querySelectorAll(".video-slide");
     const contents = document.querySelectorAll(".content");
@@ -73,7 +72,7 @@ window.onload = function () {
     };
     repeat();
   } else {
-    //Add your javascript for screens smaller than 768 here
+    
   }
 
   
