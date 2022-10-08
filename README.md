@@ -17,9 +17,6 @@ Profesión: Administrador en Ciencias Gerenciales y Administrativas.
 
 **Maier CR:** edad 40, vivo en Stafford, TX - USA, soy un ingeniero de sistemas en búsqueda permanente de conocimiento.
 
-## Trello:
-https://trello.com/invite/b/7CSH59xk/8dcc80ea41e0a951e4a64ab0d9ffc17c/artistvenue
-
 ## Sitios Web de referencia:
 
 **https://concerfy.com/**
