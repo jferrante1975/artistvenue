@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  /* background-color:  #2696e9; */
+}
+
+header .brand {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  /*text-transform: uppercase;*/
+  text-decoration: none;
+}
+
+header .navigation {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+header .navigation.active {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(1, 1, 1, 0.5);
+}
+
+header .navigation .navigation-items a {
+  color: #222;
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+header .navigation .navigation-items a:before {
+  background: #222;
+  height: 5px;
+}
+
+header .navigation.active .navigation-items {
+  background: #fff;
+  width: 600px;
+  max-width: 600px;
+  margin: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+.menu-btn {
+  background: url(/images/menu.png) no-repeat;
+  background-size: 30px;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.menu-btn.active {
+  z-index: 999;
+  background: url(/images/close.svg) no-repeat;
+  background-size: 25px;
+  background-position: center;
+  transition: 0.3s ease;
+}
+
+section .container {
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+
+div.video-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+}
+
+div.video-container h2::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f35a";
+  color: gray;
+  padding-left: 5px;
+}
+
+div.video-container h2 a {
+  font-size: 1em;
+  font-weight: 700;
+  /*text-transform: uppercase;*/
+  text-decoration: none;
+  color: rgb(100, 97, 97);
+}
+
+.video-artist {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* border: 1px solid #c4c1c1; */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.data-artist img {
+  width: 0.9em;
+}
+
+.data-artist h5 {
+  font-size: 0.75em;
+  color: rgb(160, 160, 160);
+  display: inline-block;
+}
+
+.data-artist p {
+  font-size: 14px;
+}
+
+.data-artist span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.data-artist iframe {
+  width: 100%;
+}
+
+.div-artist {
+  display: none;
+}
+
+.btnProfile {
+  text-align: center;
+  display: inline-block;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btnProfile a {
+  background: white;
+  color: black;
+  padding: 10px 10px;
+  font-size: 0.8em;
+  text-decoration: none;
+  border: #000 solid 0.5px;
+  border-radius: 2px;
+}
+
+.btnToHire {
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.btnToHire a {
+  background: #2696e9;
+  color: white;
+  padding: 10px 10px;
+  font-size: 0.8em;
+  text-decoration: none;
+  border: #2696e9 solid 0.5px;
+  border-radius: 2px;
+}
+
+footer {
+  margin-top: 60px;
+  background: #000;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 12px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+  }
+ 
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+  header .navigation .navigation-items a {
+    color: #222;
+    font-size: 1.2em;
+    margin: 20px;
+  }
+
+  header .navigation .navigation-items a:before {
+    background: #222;
+    height: 5px;
+  }
+
+  header .navigation.active .navigation-items {
+    background: #fff;
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  }
+
+  .hidden {
+    display: block;
+  }
+
+
+  .container .box {
+    width: 275px;
+    height: 275px;
+  }
+
+  .icons-booking {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 15px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+  }
+
+  header .navigation {
+    display: block;
+    position: relative;
+  }
+
+  header .navigation .navigation-items a {
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+  }
+
+  header .navigation .navigation-items a:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+  }
+
+  header .navigation .navigation-items a:hover:before {
+    width: 100%;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .type-header {
+    padding: 40px 0 0 0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+
+  .icons-booking {
+    width: 33.33%;
+  }
+
+  .data-artist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #c4c1c1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .iframe-div {
+    display: inline-block;
+    padding-left: 20px;
+    align-content: center;
+    order: 3;
+    
+  }
+
+  .description {
+    display: inline-block;
+    order: 2;
+  }
+
+  .div-artist {
+    display: inline-block;
+    order: 1;
+  }
+
+  .div-artist img {
+    width: 190px;
+    padding-right: 20px;
+  }
+}
