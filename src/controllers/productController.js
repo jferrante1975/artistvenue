@@ -10,11 +10,20 @@ const productController = {
 
     const categoria = req.query.categoria;
 
-    let producto = products.filter(producto => {
-        if (producto.categoria != null && producto.video != null){
-            return producto.categoria.toLowerCase() == categoria;
-        }
-    } )    
+    console.log(categoria);
+
+    let producto = {};
+
+    if (categoria != null) {
+       producto = products.filter(producto => {
+          if (producto.categoria != null && producto.video != null){
+              return producto.categoria.toLowerCase() == categoria;
+          }
+      } )    
+    }
+    else {
+      producto = products;
+    }
     
     res.render(path.join(__dirname, "../views/products/products.ejs"),{producto}); 
 
