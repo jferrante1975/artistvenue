@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <title>Detalle de Productos</title>
+</head>
+
+<body>
+    <%- include('../partials/header') %>  
+    <section class="videos">
+        <div class="video-container">
+            <div class="video-artist">
+                <% producto.forEach(artista => { %> 
+                <div class="data-artist">
+                    <div class="div-artist">
+                        <img class="img-artist" src="<%= artista.imagen  %>" alt="our" />
+                    </div>
+                    <div class="iframe-div">
+                        <iframe src=" <%= artista.video  %> "    title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <span><%= artista.nombre %> </span>
+                        <p><%= artista.descCorta  %></p>
+                        <img src="/images/home-img/band.jpg" alt="star-full" />
+                        <h5>(26)</h5>
+                        <p> <%= artista.genero %>  </p>
+                        <p> <%= artista.precio  %>  </p>
+                        <div class="btnProfile">
+                            <a href="/">Ver perfil</a>
+                        </div>
+                        <div class="btnToHire">
+                            <a href="/">Contratar Banda</a>
+                        </div>
+                    </div>
+
+                </div>
+                <% }) %> 
+            </div>
+        </div>    
+        
+    </section>
+</body>
+
+</html>

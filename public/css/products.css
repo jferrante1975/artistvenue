@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+
+ 
+  .img-artist{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 155px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+@media (min-width: 768) { 
+
+    .video-container {
+        margin: 0px;
+    }
+    
+}
+
+
+@media (min-width: 1024) { 
+
+    .video-container {
+        margin: 0px;
+    }
+    
+}
