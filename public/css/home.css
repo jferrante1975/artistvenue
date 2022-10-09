@@ -554,6 +554,7 @@ div.video-container h2 a {
   cursor: pointer;
 }
 
+
 .btnProfile {
   text-align: center;
   display: inline-block;
@@ -1103,61 +1104,23 @@ footer p {
     padding-left: 40px;
   }
 
-  .btnProfile a {
-    padding: 8px 7px;
-    font-size: 0.75em;
-
-  }
-  
-  .btnToHire a {
-    padding: 8px 7px;
-    font-size: 0.75em;
-  }
 
   .btnProfile {
     text-align: center;
     display: inline-block;
     padding-right: 10px;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 10px;
   }
-  
   .btnToHire {
     text-align: center;
-    padding-right: 10px;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    display: inline-block;
+    padding-bottom: 20px;
   }
 }
 
 @media (min-width: 1920px) {
   .video-artist {
     width: 50%;
-  }
-
-  .btnProfile a {
-    padding: 8px 7px;
-    font-size: 0.75em;
-
-  }
-  
-  .btnToHire a {
-    padding: 8px 7px;
-    font-size: 0.75em;
-  }
-
-  .btnProfile {
-    text-align: center;
-    display: inline-block;
-    padding-right: 10px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-  }
-  
-  .btnToHire {
-    text-align: center;
-    padding-right: 10px;
-    padding-top: 30px;
-    padding-bottom: 10px;
   }
 }

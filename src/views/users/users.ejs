@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <%- include('../partials/head') %>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="/css/users.css" />
+  <%- include('../partials/header') %>
+  <body>
+    <main>
+      <div class="container-users">
+        <h2>Listado de Usuarios</h2>
+        <div class="btnAddUser">
+          <a href="/">Crear Usuario</a>
+        </div>
+        <table class="table align-middle mb-0 bg-white">
+          <thead class="bg-light">
+            <tr>
+              <th>Nombre</th>
+              <th>Ubicación</th>
+              <th>Estado</th>
+              <th>Rol</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% users.forEach(user => { %>
+             <tr>
+              <td>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="<%= user.image %>"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                  />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1"><%= user.first_name %> <%= user.last_name %></p>
+                    <p class="text-muted mb-0"><%= user.email %></p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="fw-normal mb-1"><%= user.city %></p>
+                <p class="text-muted mb-0"><%= user.country %></p>
+              </td>
+              <td>
+                <% if (user.status == "Activo") { %>
+                    <span class="badge badge-success rounded-pill d-inline"
+                  ><%= user.status %></span
+                >
+                    <%} else { %>
+                        <span class="badge badge-danger rounded-pill d-inline"
+                        ><%= user.status %></span
+                      >
+                    <% } %>
+   
+                 
+                
+              </td>
+              <td><%= user.rol %></td>
+              <td>
+                <button type="button" class="btn btn-link btn-sm btn-rounded">
+                  Editar
+                </button>
+              </td>
+            </tr>
+            <% }) %>
+          
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <%- include('../partials/footer') %>
+    <script src="/js/usr.js"></script>
+  </body>
 </html>
