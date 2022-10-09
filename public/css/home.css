@@ -565,8 +565,8 @@ div.video-container h2 a {
 .btnProfile a {
   background: white;
   color: black;
-  padding: 8px 5px;
-  font-size: 0.7em;
+  padding: 8px 7px;
+  font-size: 0.75em;
   text-decoration: none;
   border: #000 solid 0.5px;
   border-radius: 2px;
@@ -581,8 +581,8 @@ div.video-container h2 a {
 .btnToHire a {
   background: #2696e9;
   color: white;
-  padding: 8px 5px;
-  font-size: 0.7em;
+  padding: 8px 7px;
+  font-size: 0.75em;
   text-decoration: none;
   border: #2696e9 solid 0.5px;
   border-radius: 2px;
@@ -764,6 +764,17 @@ footer p {
     padding-left: 40px;
   }
 
+  .btnProfile a {
+    padding: 8px 5px;
+    font-size: 0.7em;
+
+  }
+  
+  .btnToHire a {
+    padding: 8px 5px;
+    font-size: 0.7em;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -913,6 +924,32 @@ footer p {
   .img-artist-travel {
     width: 250px;
     padding-left: 40px;
+  }
+
+  .btnProfile a {
+    padding: 8px 7px;
+    font-size: 0.75em;
+
+  }
+  
+  .btnToHire a {
+    padding: 8px 7px;
+    font-size: 0.75em;
+  }
+
+  .btnProfile {
+    text-align: center;
+    display: inline-block;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .btnToHire {
+    text-align: center;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
   
 }
@@ -1065,10 +1102,62 @@ footer p {
     width: 250px;
     padding-left: 40px;
   }
+
+  .btnProfile a {
+    padding: 8px 7px;
+    font-size: 0.75em;
+
+  }
+  
+  .btnToHire a {
+    padding: 8px 7px;
+    font-size: 0.75em;
+  }
+
+  .btnProfile {
+    text-align: center;
+    display: inline-block;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .btnToHire {
+    text-align: center;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
 }
 
 @media (min-width: 1920px) {
   .video-artist {
     width: 50%;
+  }
+
+  .btnProfile a {
+    padding: 8px 7px;
+    font-size: 0.75em;
+
+  }
+  
+  .btnToHire a {
+    padding: 8px 7px;
+    font-size: 0.75em;
+  }
+
+  .btnProfile {
+    text-align: center;
+    display: inline-block;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .btnToHire {
+    text-align: center;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
 }

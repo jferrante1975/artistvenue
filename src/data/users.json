@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "first_name": "Margoth",
+    "last_name": "Raynor",
+    "email": "mraynor0@hatena.ne.jp",
+    "password": "obp4BHAfJGZ",
+    "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+    "rol": "Admin",
+    "status": "Activo"
+  },
+  {
+    "id": 2,
+    "first_name": "Godfrey",
+    "last_name": "Wyley",
+    "email": "gwyley1@squidoo.com",
+    "password": "V06IYH9O",
+    "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+    "rol": "Artista",
+    "status": "Activo"
+  },
+  {
+    "id": 3,
+    "first_name": "Holly",
+    "last_name": "Andrzejczak",
+    "email": "handrzejczak2@dell.com",
+    "password": "pNlK2L5OD",
+    "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+    "rol": "Usuario",
+    "status": "Activo"
+  },
+  {
+    "id": 4,
+    "first_name": "Garey",
+    "last_name": "Caldecot",
+    "email": "gcaldecot3@woothemes.com",
+    "password": "EijA3pdJZ1",
+    "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+    "rol": "Admin",
+    "status": "Inactivo"
+  },
+  {
+    "id": 5,
+    "first_name": "Poul",
+    "last_name": "McDavid",
+    "email": "pmcdavid4@stumbleupon.com",
+    "password": "swOa16sE",
+    "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+    "rol": "Usuario",
+    "status": "Activo"
+  },
+  {
+    "id": 6,
+    "first_name": "Cathe",
+    "last_name": "Clemo",
+    "email": "cclemo5@posterous.com",
+    "password": "dCimR25w",
+    "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+    "rol": "Usuario",
+    "status": "Inactivo"
+  },
+  {
+    "id": 7,
+    "first_name": "Graig",
+    "last_name": "Mulvey",
+    "email": "gmulvey6@ameblo.jp",
+    "password": "dWNQRRc",
+    "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+    "rol": "Admin",
+    "status": "Inactivo"
+  },
+  {
+    "id": 8,
+    "first_name": "Addy",
+    "last_name": "Gasking",
+    "email": "agasking7@jalbum.net",
+    "password": "xvoxGK3YWbJt",
+    "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+    "rol": "Usuario",
+    "status": "Activo"
+  },
+  {
+    "id": 9,
+    "first_name": "Tonye",
+    "last_name": "Purton",
+    "email": "tpurton8@acquirethisname.com",
+    "password": "xNQq6BckNCYB",
+    "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+    "rol": "Usuario",
+    "status": "Inactivo"
+  },
+  {
+    "id": 10,
+    "first_name": "Silvia",
+    "last_name": "Frodsham",
+    "email": "sfrodsham9@archive.org",
+    "password": "3TAbH7",
+    "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+    "rol": "Usuario",
+    "status": "Inactivo"
+  }
+]

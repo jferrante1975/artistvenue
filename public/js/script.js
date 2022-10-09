@@ -74,9 +74,8 @@ window.onload = function () {
   } else {
     
   }
-
-  
 };
+
 
 
 
