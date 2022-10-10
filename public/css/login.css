@@ -10,7 +10,7 @@
 body {
   background-color: rgb(251, 251, 253);
 }
-.social-login img {
+.google img {
   width: 24px;
 }
 a {
@@ -22,7 +22,7 @@ form h2 {
   padding-bottom: 20px;
 }
 
-.card {
+.login {
   font-family: "Poppins", sans-serif;
   width: 340px;
   margin-left: auto;
@@ -40,22 +40,22 @@ form h2 {
   font-weight: bold;
   margin: 0;
 }
-.subtitle {
+.register {
   text-align: center;
   font-weight: bold;
   padding-bottom: 20px;
 }
-.btn-text {
+.btnText {
   margin: 0;
 }
 
-.social-login {
+.google {
   display: flex;
   justify-content: center;
   gap: 5px;
 }
 
-.google-btn {
+.btnGoogle {
   background: #fff;
   border: solid 2px rgb(245 239 239);
   border-radius: 8px;
@@ -68,23 +68,23 @@ form h2 {
   justify-content: center;
 }
 
-.or {
+.else {
   text-align: center;
   font-weight: bold;
   border-bottom: 2px solid rgb(245 239 239);
   line-height: 0.1em;
   margin: 25px 0;
 }
-.or span {
+.else span {
   background: #fff;
   padding: 0 10px;
 }
 
-.email-login {
+.email {
   display: flex;
   flex-direction: column;
 }
-.email-login label {
+.email label {
   color: rgb(170 166 166);
 }
 
@@ -98,7 +98,7 @@ input[type="password"] {
   box-sizing: border-box;
 }
 
-.cta-btn {
+.btnEnter {
   background-color: #2696e9;
   color: white;
   padding: 18px 20px;
@@ -109,7 +109,7 @@ input[type="password"] {
   border: none;
 }
 
-.forget-pass {
+.forgetPass {
   text-align: center;
   display: block;
 }
