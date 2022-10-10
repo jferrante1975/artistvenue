@@ -1,135 +1,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
-header {
-    z-index: 999;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 20px;
-    background-color: black;
-    position: fixed;
+body {
+  background-color: rgb(251, 251, 253);
+}
+.social-login img {
+  width: 24px;
+}
+a {
+  text-decoration: none;
+  color: #2696e9;
 }
 
-header .brand {
-    color: #fff;
-    font-size: 1.5em;
-    font-weight: 700;
-    text-decoration: none;
+form h2 {
+  padding-bottom: 20px;
 }
 
-header .navigation {
-    display: none;
+.card {
+  font-family: "Poppins", sans-serif;
+  width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-radius: 10px;
+  background-color: #ffff;
+  padding: 1.8rem;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-header .navigation .navigation-items a {
-    color: #222;
-    font-size: 1.2em;
-    margin: 20px;
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+.subtitle {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.btn-text {
+  margin: 0;
 }
 
-header .navigation .navigation-items a:before {
-    background: #222;
-    height: 5px;
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 
-.menu-btn {
-    background: url(/images/menu.png) no-repeat;
-    background-size: 30px;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: 0.3s ease;
+.google-btn {
+  background: #fff;
+  border: solid 2px rgb(245 239 239);
+  border-radius: 8px;
+  font-weight: bold;
+  display: flex;
+  padding: 10px 10px;
+  flex: auto;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
 }
 
-.Bienvenidos {
-    padding: 80px;
-    padding-bottom: 40px;
-    text-align: center;
-    font-size: 0.80em;
+.or {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(245 239 239);
+  line-height: 0.1em;
+  margin: 25px 0;
+}
+.or span {
+  background: #fff;
+  padding: 0 10px;
 }
 
-.top-header2 {
-    padding-top: 50px, 85px, 10px, 10px;
-    text-align: center;
-    color: black;
-    font-size: 0.80em ;
+.email-login {
+  display: flex;
+  flex-direction: column;
+}
+.email-login label {
+  color: rgb(170 166 166);
 }
 
-.Ingresa {
-    padding:10px;
-    text-align: center;
-    color: black;
+input[type="text"],
+input[type="password"] {
+  padding: 15px 20px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
-.password {
-    height: 50px;
-    padding: 10px;
-    padding-right: 48px;
-    text-align: center;
-    color: black;
+.cta-btn {
+  background-color: #2696e9;
+  color: white;
+  padding: 18px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
 }
 
-.recuerdame{
-    padding: 10px;
-    height: 50px;
-text-align: center;
+.forget-pass {
+  text-align: center;
+  display: block;
 }
 
-.button {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.img {
+  text-align: center;
 }
 
-.button a {
-    background: #2696e9;
-    padding: 10px 10px;
-    color: white;
-    font-size: 0.70em;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: 2px;
-}
-
-.iniciar-sesion {
-    text-align: center;
-    margin-top: 15px;
-    background-color: rgb(46, 46, 241);
-    margin-bottom: 15px;
-    padding-left: 12px;
-    width: 50%;
-    padding-top: 30px;
-    margin-right: 60%;
-    padding-bottom: 30px;
-    box-sizing: border-box;
-}
-
-.facebook{
-    background-color: black;
-}
-.olvidaste{
-    padding: 10px;
-}
-
-.politica{
-    font-size: 15px;
-    padding: 10px;
-    padding-top: 80px;
-}
-
-.footer {
-    background-color: black;
-    padding: 30px;
+@media (min-width: 768px) {
+  .card {
+    width: 400px;
+  }
 }
