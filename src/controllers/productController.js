@@ -37,6 +37,9 @@ const productController = {
 
     res.render(path.join(__dirname, "../views/products/productDetail.ejs"),{producto}); 
     
+  },
+  cart: (req, res) => {
+    res.render('products/cart');
   }
 };
 
