@@ -33,7 +33,7 @@ const productController = {
   },
 
   cart: (req, res) => {
-    res.render('products/cart');
+    res.render(path.join(__dirname, "../views/products/cart.ejs"));
   }
 };
 
