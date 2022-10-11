@@ -8,40 +8,17 @@
     <title>Detalle de Productos</title>
 </head>
 <body>
-    <header>
-        <a href="#" class="brand">ArtistVenue</a>
-        <div class="menu-btn"></div>
-  
-        <div class="navigation">
-          <div class="navigation-items">
-            <a href="#">Buscar Músicos</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Contacto</a>
-            <a href="#">Ingresar</a>
-          </div>
+  <%- include('../partials/header') %>        
+    <section class="seccion-header">
+        <div>
+          <img src="<%= producto.imagen  %> " alt="">
         </div>
-    </header>
-
-    <section >
-        <div class="containerProducts">
-          <div class="imgBox">
-            <img src="/images/banda.jpg" alt="band" />
-          </div>
-          <div class="descBox">
-            <p>nombre de banda o solista</p>
-            <p>estilo musical</p>
-            <p>precio desde hasta</p>
-            <button>perfil</button>
-            <button>contratar</button>
-            
-          </div>
-          <div class="videoBox">
-            <iframe src="https://www.youtube.com/embed/85MppyLJHz0?autoplay=0"  
-            frameborder="0" allowfullscreen></iframe>
-          </div>
+        <div class="seccion-p">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem minus inventore, ducimus sequi iusto sed quaerat ratione, quam excepturi voluptatibus quisquam quos obcaecati necessitatibus pariatur maiores impedit nulla delectus? Labore?</p>
         </div>
     </section>
-    
-    <footer></footer>
+  <h1><%= producto.id %> </h1>
+
+  <%- include('../partials/footer') %>  
 </body>
 </html>

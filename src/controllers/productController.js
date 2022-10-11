@@ -10,8 +10,6 @@ const productController = {
 
     const categoria = req.query.categoria;
 
-    console.log(categoria);
-
     let producto = {};
 
     if (categoria != null) {
@@ -28,8 +26,17 @@ const productController = {
     res.render(path.join(__dirname, "../views/products/products.ejs"),{producto}); 
 
   },
+
   detail: (req, res) => {
-    res.render('products/productDetail');
+
+    const productId = req.params.id;
+    
+    let producto = products.find(producto => {
+      return producto.id == productId;
+    })
+
+    res.render(path.join(__dirname, "../views/products/productDetail.ejs"),{producto}); 
+    
   }
 };
 

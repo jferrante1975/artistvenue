@@ -36,7 +36,7 @@
                         <p> <%= artista.genero %>  </p>
                         <p> <%= artista.precio  %>  </p>
                         <div class="btnProfile">
-                            <a href="/">Ver perfil</a>
+                            <a href="productDetail/<%=artista.id%>">Ver perfil</a>
                         </div>
                         <div class="btnToHire">
                             <a href="/">Contratar Banda</a>
@@ -49,6 +49,7 @@
         </div>    
         
     </section>
+    <%- include('../partials/footer') %>  
 </body>
 
 </html>
