@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
 body {
     width: vh;
     height: vh;
@@ -19,7 +28,7 @@ body {
 .bodyTitulo {
     color: white;
     text-align: center;
-    padding: 0px;
+    padding-top: 150px;
     margin: 0px;
  }
 
@@ -50,7 +59,7 @@ body {
 }
 
 .regpro{
-    margin-top: 10px;
+    margin-top: 20px;
     color: white;
     
 }
@@ -77,4 +86,5 @@ button{
     color: white;
    
 }
+
 

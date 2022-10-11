@@ -9,6 +9,10 @@ const userController = {
     res.render(path.join(__dirname, "../views/users/login.ejs"));
   },
 
+  register: (req, res) => {
+    res.render(path.join(__dirname, "../views/users/register.ejs"));
+  },
+
   users: (req, res) => {
     res.render(path.join(__dirname, "../views/users/users.ejs"), {
       users: users,
