@@ -22,7 +22,7 @@ const productController = {
     else {
       producto = products;
     }
-    
+   
     res.render(path.join(__dirname, "../views/products/products.ejs"),{producto}); 
 
   },
@@ -40,7 +40,20 @@ const productController = {
   },
   cart: (req, res) => {
     res.render(path.join(__dirname, "../views/products/cart.ejs"));
-  }
+  },
+
+  search: (req, res) => {
+
+    const filtro = req.query.keywords.toLowerCase();
+
+    console.log(filtro);
+    let producto = products.filter( producto => { 
+            return producto.nombre.toLowerCase().includes(filtro) 
+    })
+
+    res.render(path.join(__dirname, "../views/products/products.ejs"),{producto}); 
+
+  } 
 };
 
 module.exports = productController;
