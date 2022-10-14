@@ -15,6 +15,13 @@
 
 <body>
     <%- include('../partials/header') %>  
+    <div class="div-form">
+        <form action="/products/search" method="GET" class="search-form">
+            <input type="search" name="keywords" placeholder="Buscar Artistas, Djs y más" class="search-form_input">
+            <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
     <section class="videos">
         <div class="video-container">
             <div class="video-artist">

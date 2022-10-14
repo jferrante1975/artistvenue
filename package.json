@@ -23,10 +23,14 @@
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+<<<<<<< HEAD
     "express-session": "^1.17.3",
     "passport": "^0.6.0",
     "passport-google-oauth": "^2.0.0",
     "passport-google-oauth2": "^0.2.0"
+=======
+    "multer": "^1.4.5-lts.1"
+>>>>>>> aefbc00303d6e237df4bc24097c5fcc55db60f3a
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
