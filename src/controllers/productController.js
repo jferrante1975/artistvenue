@@ -39,8 +39,8 @@ const productController = {
     });
   },
   cart: (req, res) => {
-    res.locals.title = "Cart"; 
-    res.render(path.join(__dirname, "../views/products/cart.ejs"));
+    res.locals.title = "Shopping Cart"; 
+    res.render(path.join(__dirname, "../views/products/shoppingCart.ejs"));
   }
 };
 
