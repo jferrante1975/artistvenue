@@ -21,6 +21,16 @@ const userController = {
       users: users,
     });
   },
+
+  detail: (req, res) => {
+		// let id = req.params.id
+		// let user = users.find(user => user.id == id)
+		// res.render('detail', {
+		// 	user,
+		// })
+    res.locals.title = "User Detail"; 
+    res.render(path.join(__dirname, "../views/users/detail.ejs"));
+	},
 };
 
 module.exports = userController;

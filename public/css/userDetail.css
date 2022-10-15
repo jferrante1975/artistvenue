@@ -7,12 +7,122 @@
   box-sizing: border-box;
 }
 
-body main {
+main {
+  background-color: #f2f6fc;
+}
+
+main div.detail-container {
   font-family: "Poppins", sans-serif;
-  font-size: 13px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
+}
+
+main div.profile {
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 85%;
+  text-align: center;
+  border-top: 20px;
+  margin-bottom: 30px;
+}
+
+div.avatar {
+  padding-top: 20px;
+}
+
+div.avatar h3 {
+  color: #6c757d !important;
+  margin-bottom: 1.5rem !important;
+  text-align: center;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+div.avatar .avatar-img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+div.title-card .title {
+  color: #69707a;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  width: 100%;
+  text-align: left;
+  background-color: #f8f8f9;
+  padding: 16px 21.6px;
+}
+
+.btnUpload {
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.btnUpload a {
+  background: #2696e9;
+  color: white;
+  padding: 8px 30px;
+  font-size: 0.9em;
+  text-decoration: none;
+  border: #2696e9 solid 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+div.form-elements {
+  padding-top: 15px;
+}
+
+div.user .username {
+  color: #6c757d !important;
+  margin-bottom: 1.5rem !important;
+  text-align: left;
+  font-size: 0.875em;
+  padding: 16px 21.6px;
+}
+div.save {
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+
+div.save .btnSave {
+  background: #2696e9;
+  width: 85%;
+  color: white;
+  padding: 8px 18px;
+  font-size: 0.9em;
+  text-decoration: none;
+  border: #2696e9 solid 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+  width: 85%;
+  font-size: 13px;
+  color: #6c757d;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(116, 115, 115);
+  box-sizing: border-box;
+  border-radius: 0.375em;
+}
+
+.lbInput {
+  font-size: 16px;
+  padding: 20px;
 }
