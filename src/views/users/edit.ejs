@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/userDetail.css" />
+  <%- include('../partials/header') %>
+  <body>
+    <main>
+      <form action="/products" method="POST" enctype="multipart/form-data">
+        <div class="detail-container">
+          <div class="profile">
+            <div class="title-card">
+              <div class="title">
+                <h3>Imagen de Perfil</h3>
+              </div>
+            </div>
+            <!-- avatar -->
+            <div class="avatar">
+              <img
+                class="avatar-img"
+                src="<%= user.image %>"
+                alt=""
+              />
+              <h3>JPG o PNG no mas grande de 5 MB</h3>
+              <div class="btnUpload">
+                <a href="/">Subir Imagen</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile">
+            <div class="title-card">
+              <div class="title">
+                <h3>Detalle Cuenta</h3>
+              </div>
+            </div>
+            <div class="form-elements">
+              
+              <input
+                type="text"
+                name="name"
+                placeholder="Nombre"
+                required
+                minlength="5"
+                value="<%= user.first_name %>"
+              />
+              <input
+                type="text"
+                name="user"
+                placeholder="Apellido"
+                required
+                minlength="5"
+                value="<%= user.last_name %>"
+              />
+              <input
+                type="text"
+                name="user"
+                placeholder="Ciudad"
+                required
+                minlength="5"
+                value="<%= user.city %>"
+              />
+              <input
+                type="text"
+                name="user"
+                placeholder="Pais"
+                required
+                minlength="5"
+                value="<%= user.country %>"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+                minlength="5"
+                value="<%= user.email %>"
+              />
+              <select
+                id="ddCountry"
+                name="ddCountry"
+                onchange="populate(this.id, 'ddCity')"
+              >
+                <option value="">Selecciona el pais</option>
+                <option value="usa">USA</option>
+                <option value="argentina">Argentina</option>
+                <option value="Ppru">Peru</option>
+              </select>
+              <select id="ddCity" name="ddCity"></select>
+
+              <select id="ddRole" name="ddRole">
+                <option value="">Selecciona el rol</option>
+                <option value="admin">Administrador</option>
+                <option value="artista">Artista</option>
+                <option value="usuario">Usuario</option>
+              </select>
+
+              <input
+                type="password"
+                name="password"
+                placeholder="Contraseña"
+                required
+                minlength="5"
+              />
+
+              <input
+                type="password"
+                name="repassword"
+                placeholder="Repetir Contraseña"
+                required
+                minlength="5"
+              />
+            </div>
+
+            <div class="save">
+              <button type="submit" class="btnSave">Guardar Usuario</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <%- include('../partials/footer') %>
+    </main>
+
+    <script src="/js/popup.js"></script>
+  </body>
+</html>
