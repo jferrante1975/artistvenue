@@ -139,8 +139,7 @@ input[type="date"] {
   width: 85%;
   font-size: 13px;
   color: #6c757d !important;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 12px;
   display: inline-block;
   border: 1px solid rgb(116, 115, 115);
   box-sizing: border-box;
@@ -202,6 +201,11 @@ input[type="date"] {
   cursor: pointer;
 }
 
+div.form-elements .data h4 {
+  padding-left: 5px;
+  padding-top: 15px;
+}
+
 @media (min-width: 768px) {
   div.avatar .avatar-img {
     border-radius: 60%;
@@ -214,6 +218,11 @@ input[type="date"] {
 
   div.form-elements .data {
     padding-left: 50px;
+  }
+
+  div.form-elements .data h4 {
+    padding-left: 1px;
+    padding-top: 15px;
   }
   
 }
@@ -245,6 +254,10 @@ input[type="date"] {
     padding-left: 40px;
   }
   
+  div.form-elements .data h4 {
+    padding-left: 1px;
+    padding-top: 15px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -277,6 +290,10 @@ input[type="date"] {
     padding-left: 50px;
   }
   
+  div.form-elements .data h4 {
+    padding-left: 1px;
+    padding-top: 15px;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -305,5 +322,41 @@ input[type="date"] {
     padding-left: 350px;
   }
 
+  div.form-elements .data h4 {
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 2560px) {
+  main div.detail-container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+
+  main div.profile {
+    margin-left: 20px;
+  }
+
+  main div.profile-image {
+    width: 40%;
+    margin: 0;
+  }
+
+  div.avatar .avatar-img {
+    border-radius: 50%;
+    width: 50%;
+  }
+
+  main h2 {
+    padding-left: 350px;
+  }
+
+  div.form-elements .data h4 {
+    padding-left: 45px;
+    padding-top: 15px;
+  }
 }
 
