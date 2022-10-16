@@ -3,13 +3,15 @@
   <%- include('../partials/head') %>
 
   <link rel="stylesheet" href="/css/home.css" />
-  <link rel="stylesheet" href="/css/userDetail.css" />
+  <link rel="stylesheet" href="/css/userEdit.css" />
   <%- include('../partials/header') %>
   <body>
     <main>
+      <h2>Edicion de Usuario</h2>
+
       <form action="/products" method="POST" enctype="multipart/form-data">
         <div class="detail-container">
-          <div class="profile">
+          <div class="profile-image">
             <div class="title-card">
               <div class="title">
                 <h3>Imagen de Perfil</h3>
@@ -17,15 +19,27 @@
             </div>
             <!-- avatar -->
             <div class="avatar">
-              <img
-                class="avatar-img"
-                src="<%= user.image %>"
-                alt=""
-              />
+              <img class="avatar-img" src="<%= user.image %>" alt="" />
               <h3>JPG o PNG no mas grande de 5 MB</h3>
-              <div class="btnUpload">
-                <a href="/">Subir Imagen</a>
+              
+              <div class="imgFile">
+                <label for="image"
+                  ><i class="fas fa-circle-plus fa-3x"></i
+                ></label>
+                <input
+                  type="file"
+                  name="image"
+                  id="image"
+                  class="form-input"
+                  accept="image/png, image/jpg, image/gif, image/jpeg"
+                  style="display: none"
+                />
+                <div id="file-upload-filename"></div>
+                <div></div>
               </div>
+              <!-- <div class="btnUpload">
+                <a href="/">Subir Imagen</a>
+              </div> -->
             </div>
           </div>
 
@@ -36,7 +50,6 @@
               </div>
             </div>
             <div class="form-elements">
-              
               <input
                 type="text"
                 name="name"
@@ -114,14 +127,13 @@
             </div>
 
             <div class="save">
-              <button type="submit" class="btnSave">Guardar Usuario</button>
+              <button type="submit" class="btnSave">Guardar</button>
             </div>
           </div>
         </div>
       </form>
       <%- include('../partials/footer') %>
     </main>
-
     <script src="/js/popup.js"></script>
   </body>
 </html>

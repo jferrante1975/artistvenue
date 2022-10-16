@@ -46,3 +46,15 @@ function populate(s, s1) {
     s1.options.add(new_op);
   }
 }
+
+
+var input = document.getElementById("image");
+var infoArea = document.getElementById("file-upload-filename");
+
+input.addEventListener("change", showFileName);
+
+function showFileName(event) {
+  var input = event.srcElement;
+  var fileName = input.files[0].name;
+  infoArea.textContent = fileName;
+}
