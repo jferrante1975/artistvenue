@@ -181,7 +181,8 @@ input[type="file"] {
 
 #ddCountry,
 #ddCity,
-#ddRole {
+#ddRole,
+#ddStatus {
   width: 85%;
   font-size: 13px;
   color: #6c757d;
@@ -326,6 +327,7 @@ input[type="file"] {
 
   main div.profile {
     margin-left: 20px;
+    margin-bottom: 135px;
   }
 
   main div.profile-image {
@@ -341,6 +343,16 @@ input[type="file"] {
   main h2 {
     padding-left: 350px;
   }
-
+  
+  div.form-elements .data h4 {
+    padding-left: 10px;
+    /* padding-top: 15px; */
+  }
 }
 
+@media (min-width: 2560px) {
+  div.form-elements .data h4 {
+    padding-left: 45px;
+    padding-top: 15px;
+  }
+}

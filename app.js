@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const methodOverride =  require('method-override'); 
 const app = express();
 const mainRoutes = require("./src/routes/mainRoutes");
 const productsRoutes = require("./src/routes/productsRoutes");
@@ -10,6 +11,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.set("view engine", "ejs");
 app.set('views',path.join(__dirname,'views'));
 
+app.use(methodOverride('_method')); 
 app.use("/", mainRoutes);
 app.use("/products", productsRoutes);
 app.use("/search", productsRoutes);
