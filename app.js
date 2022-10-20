@@ -5,6 +5,7 @@ const app = express();
 const mainRoutes = require("./src/routes/mainRoutes");
 const productsRoutes = require("./src/routes/productsRoutes");
 const usersRoutes = require("./src/routes/usersRoutes");
+const session = require('express-session');
 const PORT = 3000;
 
 app.use(express.static(path.join(__dirname, '/public')));
@@ -16,6 +17,7 @@ app.use("/", mainRoutes);
 app.use("/products", productsRoutes);
 app.use("/search", productsRoutes);
 app.use("/users", usersRoutes);
+app.use(session({ secret: 'ArtistVenue secret'}))
 
 app.listen(PORT, () => {
   console.log(`Servidor inicializado en el puerto: ${PORT}...`);
