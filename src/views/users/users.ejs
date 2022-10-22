@@ -5,7 +5,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
     rel="stylesheet"
   />
-
+  <link rel="stylesheet" href="/css/home.css" />
   <link rel="stylesheet" href="/css/users.css" />
   <%- include('../partials/header') %>
   <body>
@@ -27,17 +27,19 @@
           </thead>
           <tbody>
             <% users.forEach(user => { %>
-             <tr>
+            <tr>
               <td>
                 <div class="d-flex align-items-center">
                   <img
-                    src="<%= user.image %>"
+                    src="/images/profile/<%= user.image %>"
                     alt=""
                     style="width: 45px; height: 45px"
                     class="rounded-circle"
                   />
                   <div class="ms-3">
-                    <p class="fw-bold mb-1"><%= user.first_name %> <%= user.last_name %></p>
+                    <p class="fw-bold mb-1">
+                      <%= user.first_name %> <%= user.last_name %>
+                    </p>
                     <p class="text-muted mb-0"><%= user.email %></p>
                   </div>
                 </div>
@@ -47,28 +49,27 @@
                 <p class="text-muted mb-0"><%= user.country %></p>
               </td>
               <td>
-                <% if (user.status == "Activo") { %>
-                    <span class="badge badge-success rounded-pill d-inline"
+                <% if (user.status == "activo") { %>
+                <span class="badge badge-success rounded-pill d-inline"
                   ><%= user.status %></span
                 >
-                    <%} else { %>
-                        <span class="badge badge-danger rounded-pill d-inline"
-                        ><%= user.status %></span
-                      >
-                    <% } %>
-   
-                 
-                
+                <%} else { %>
+                <span class="badge badge-danger rounded-pill d-inline"
+                  ><%= user.status %></span
+                >
+                <% } %>
               </td>
               <td><%= user.rol %></td>
               <td>
-                <button type="button" class="btn btn-link btn-sm btn-rounded">
+                <a href="/users/detail/<%= user.id %>" class="btn btn-link btn-sm btn-rounded">Ver</a>
+                <a href="/users/edit/<%= user.id %>" class="btn btn-link btn-sm btn-rounded">Editar</a>
+                <a href="" class="btn btn-link btn-sm btn-rounded">Eliminar</a>
+                <!-- <button type="button" class="btn btn-link btn-sm btn-rounded">
                   Editar
-                </button>
+                </button> -->
               </td>
             </tr>
             <% }) %>
-          
           </tbody>
         </table>
       </div>

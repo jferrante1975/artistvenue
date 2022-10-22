@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/userDetail.css" />
+  <%- include('../partials/header') %>
+  <body>
+    <main>
+      <h2>Perfil de Usuario</h2>
+
+      <div class="detail-container">
+        <div class="profile-image">
+          <div class="title-card">
+            <div class="title">
+              <h3>Imagen de Perfil</h3>
+            </div>
+          </div>
+          <!-- avatar -->
+          <div class="avatar">
+            <img class="avatar-img" src="/images/profile/<%= user.image %>" alt="" />
+            <h3></h3>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="title-card">
+            <div class="title">
+              <h3>Detalle Cuenta</h3>
+            </div>
+          </div>
+          <div class="form-elements">
+            <div class="data">
+              <h4>Nombre</h4>
+            </div>
+            
+            <input
+              type="text"
+              name="name"
+              placeholder="Nombre"
+              required
+              minlength="5"
+              value="<%= user.first_name %>"
+              disabled
+            />
+            <div class="data">
+              <h4>Apellido</h4>
+            </div>
+            <input
+              type="text"
+              name="user"
+              placeholder="Apellido"
+              required
+              minlength="5"
+              value="<%= user.last_name %>"
+              disabled
+            />
+            <div class="data">
+              <h4>Pais</h4>
+            </div>
+            <input
+              type="text"
+              name="user"
+              placeholder="Pais"
+              required
+              minlength="5"
+              value="<%= user.country %>"
+              disabled
+            />
+            <!-- <div class="data">
+              <h4>Ciudad</h4>
+            </div>
+            <input
+              type="text"
+              name="user"
+              placeholder="Ciudad"
+              required
+              minlength="5"
+              value="<%= user.city %>"
+              disabled
+            /> -->
+            <div class="data">
+              <h4>Email</h4>
+            </div>
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required
+              minlength="5"
+              value="<%= user.email %>"
+              disabled
+            />
+            <div class="data">
+              <h4>Rol</h4>
+            </div>
+            <input
+              type="text"
+              name="user"
+              placeholder="Rol"
+              required
+              minlength="5"
+              value="<%= user.rol %>"
+              disabled
+            />
+            <div class="data">
+              <h4>Estado</h4>
+            </div>
+            <input
+              type="text"
+              name="user"
+              placeholder="Ciudad"
+              required
+              minlength="5"
+              value="<%= user.status %>"
+              disabled
+            />
+            <div class="buttons">
+              <div class="btnEdit">
+                <a href="/users/edit/<%= user.id %>">Editar</a>
+              </div>
+              <div class="btnDelete">
+                <a href="/">Eliminar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <%- include('../partials/footer') %>
+    </main>
+    <script src="/js/popup.js"></script>
+  </body>
+</html>

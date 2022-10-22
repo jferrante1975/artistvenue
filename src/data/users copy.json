@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "first_name": "Maier",
+    "last_name": "CR",
+    "country": "USA",
+    "email": "maiercr@hatena.ne.jp",
+    "pws": "obp4BHAfJGZ",
+    "image": "https://xsgames.co/randomusers/assets/avatars/male/29.jpg",
+    "rol": "Admin",
+    "status": "Activo"
+  },
+  {
+    "id": 2,
+    "first_name": "Javier",
+    "last_name": "Ferrante",
+    "country": "Argentina",
+    "email": "jferrante@squidoo.com",
+    "pws": "V06IYH9O",
+    "image": "https://xsgames.co/randomusers/assets/avatars/male/77.jpg",
+    "rol": "Admin",
+    "status": "Activo"
+  },
+  {
+    "id": 3,
+    "first_name": "Holly",
+    "last_name": "Andrzejczak",
+    "country": "Peru",
+    "email": "handrzejczak2@dell.com",
+    "pws": "pNlK2L5OD",
+    "image": "https://xsgames.co/randomusers/assets/avatars/female/55.jpg",
+    "rol": "Artista",
+    "status": "Activo"
+  },
+  {
+    "id": 4,
+    "first_name": "Garey",
+    "last_name": "Argentina",
+    "country": "Rosario",
+    "email": "gcaldecot3@woothemes.com",
+    "pws": "EijA3pdJZ1",
+    "image": "https://xsgames.co/randomusers/assets/avatars/female/52.jpg",
+    "rol": "Artista",
+    "status": "Inactivo"
+  },
+  {
+    "id": 5,
+    "first_name": "Poul",
+    "last_name": "McDavid",
+    "country": "USA",
+    "email": "pmcdavid4@stumbleupon.com",
+    "pws": "swOa16sE",
+    "image": "https://xsgames.co/randomusers/assets/avatars/male/1.jpg",
+    "rol": "Usuario",
+    "status": "Activo"
+  },
+  {
+    "id": 6,
+    "first_name": "Cathe",
+    "last_name": "Clemo",
+    "country": "Peru",
+    "email": "cclemo5@posterous.com",
+    "pws": "dCimR25w",
+    "image": "https://xsgames.co/randomusers/assets/avatars/female/49.jpg",
+    "rol": "Usuario",
+    "status": "Inactivo"
+  },
+  {
+    "id": 7,
+    "first_name": "Lisa",
+    "last_name": "Mulvey",
+    "country": "USA",
+    "email": "gmulvey6@ameblo.jp",
+    "pws": "dWNQRRc",
+    "image": "https://xsgames.co/randomusers/assets/avatars/female/51.jpg",
+    "rol": "Artista",
+    "status": "Inactivo"
+  },
+  {
+    "id": 8,
+    "first_name": "Eddy",
+    "last_name": "Gasking",
+    "country": "Argentina",
+    "email": "agasking7@jalbum.net",
+    "pws": "xvoxGK3YWbJt",
+    "image": "https://xsgames.co/randomusers/assets/avatars/male/58.jpg",
+    "rol": "Artista",
+    "status": "Activo"
+  },
+  {
+    "id": 9,
+    "first_name": "Tonye",
+    "last_name": "Purton",
+    "country": "Argentina",
+    "email": "tpurton8@acquirethisname.com",
+    "pws": "xNQq6BckNCYB",
+    "image": "https://xsgames.co/randomusers/assets/avatars/male/6.jpg",
+    "rol": "Usuario",
+    "status": "Inactivo"
+  },
+  {
+    "id": 10,
+    "first_name": "Silvia",
+    "last_name": "USA",
+    "country": "Boston",
+    "email": "sfrodsham9@archive.org",
+    "pws": "3TAbH7",
+    "image": "https://xsgames.co/randomusers/assets/avatars/female/76.jpg",
+    "rol": "Artista",
+    "status": "Activo"
+  }
+]

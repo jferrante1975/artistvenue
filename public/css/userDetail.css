@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #f2f6fc;
+}
+
+main div.detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h2 {
+  color: #6c757d !important;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+}
+
+main div.profile {
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 85%;
+  text-align: center;
+  border-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main div.profile-image {
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 85%;
+  text-align: center;
+  border-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+div.avatar {
+  padding-top: 20px;
+}
+
+div.avatar h3 {
+  color: #6c757d !important;
+  margin-bottom: 1.5rem !important;
+  text-align: center;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+div.avatar .avatar-img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+div.title-card .title {
+  color: #69707a;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  width: 100%;
+  text-align: left;
+  background-color: #f8f8f9;
+  padding: 16px 21.6px;
+}
+
+div.form-elements .data {
+  color: #69707a;
+  text-align: left;
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.btnUpload {
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.btnUpload a {
+  background: #2696e9;
+  color: white;
+  padding: 8px 30px;
+  font-size: 0.9em;
+  text-decoration: none;
+  border: #2696e9 solid 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.form-elements {
+  padding-top: 15px;
+}
+
+div.user .username {
+  color: #6c757d !important;
+  margin-bottom: 1.5rem !important;
+  text-align: left;
+  font-size: 0.875em;
+  padding: 16px 21.6px;
+}
+div.save {
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+
+div.save .btnSave {
+  background: #2696e9;
+  width: 85%;
+  color: white;
+  padding: 8px 18px;
+  font-size: 0.9em;
+  text-decoration: none;
+  border: #2696e9 solid 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+  width: 85%;
+  font-size: 13px;
+  color: #6c757d !important;
+  padding: 12px;
+  display: inline-block;
+  border: 1px solid rgb(116, 115, 115);
+  box-sizing: border-box;
+  border-radius: 0.375em;
+}
+
+.lbInput {
+  font-size: 16px;
+  padding: 20px;
+}
+
+#ddCountry,
+#ddCity,
+#ddRole {
+  width: 85%;
+  font-size: 13px;
+  color: #6c757d;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(116, 115, 115);
+  box-sizing: border-box;
+  border-radius: 0.375em;
+}
+
+.btnEdit {
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.btnEdit a {
+  background: #2696e9;
+  color: white;
+  padding: 8px 30px;
+  font-size: 0.9em;
+  text-decoration: none;
+  border: #2696e9 solid 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnDelete {
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.btnDelete a {
+  background: #f50202;
+  color: white;
+  padding: 8px 20px;
+  font-size: 0.9em;
+  text-decoration: none;
+  border: #f50202 solid 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.form-elements .data h4 {
+  padding-left: 5px;
+  padding-top: 15px;
+}
+
+@media (min-width: 768px) {
+  div.avatar .avatar-img {
+    border-radius: 60%;
+    width: 25%;
+  }
+
+  main h2 {
+    padding-left: 60px;
+  }
+
+  div.form-elements .data {
+    padding-left: 50px;
+  }
+
+  div.form-elements .data h4 {
+    padding-left: 1px;
+    padding-top: 15px;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  main div.detail-container {
+    flex-direction: row;
+
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  main div.profile {
+    margin-left: 20px;
+  }
+
+  main div.profile-image {
+    width: 60%;
+    margin: 0;
+  }
+
+  div.avatar .avatar-img {
+    border-radius: 50%;
+    width: 50%;
+  }
+
+  div.form-elements .data {
+    padding-left: 40px;
+  }
+  
+  div.form-elements .data h4 {
+    padding-left: 1px;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  main div.detail-container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  main div.profile {
+    margin-left: 20px;
+  }
+
+  main div.profile-image {
+    width: 40%;
+    margin: 0;
+  }
+
+  div.avatar .avatar-img {
+    border-radius: 50%;
+    width: 60%;
+  }
+
+  main h2 {
+    padding-left: 200px;
+  }
+
+  div.form-elements .data {
+    padding-left: 50px;
+  }
+  
+  div.form-elements .data h4 {
+    padding-left: 1px;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 1920px) {
+  main div.detail-container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+
+  main div.profile {
+    margin-left: 20px;
+    margin-bottom: 78px;
+  }
+
+  main div.profile-image {
+    width: 40%;
+    margin: 0;
+  }
+
+  div.avatar .avatar-img {
+    border-radius: 50%;
+    width: 50%;
+  }
+
+  main h2 {
+    padding-left: 350px;
+  }
+
+  div.form-elements .data h4 {
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 2560px) {
+  main div.detail-container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+
+  main div.profile {
+    margin-left: 20px;
+    margin-bottom: 135px;
+  }
+
+  main div.profile-image {
+    width: 40%;
+    margin: 0;
+  }
+
+  div.avatar .avatar-img {
+    border-radius: 50%;
+    width: 50%;
+  }
+
+  main h2 {
+    padding-left: 350px;
+  }
+
+  div.form-elements .data h4 {
+    padding-left: 45px;
+    padding-top: 15px;
+  }
+}
+
