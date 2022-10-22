@@ -39,28 +39,9 @@ const productController = {
     });
   },
   cart: (req, res) => {
-<<<<<<< HEAD
     res.locals.title = "Shopping Cart"; 
     res.render(path.join(__dirname, "../views/products/shoppingCart.ejs"));
   }
-=======
-    res.locals.title = "Cart"; 
-    res.render(path.join(__dirname, "../views/products/cart.ejs"));
-  },
-
-  search: (req, res) => {
-
-    const filtro = req.query.keywords.toLowerCase();
-
-    console.log(filtro);
-    let producto = products.filter( producto => { 
-            return producto.nombre.toLowerCase().includes(filtro) 
-    })
-
-    res.render(path.join(__dirname, "../views/products/products.ejs"),{producto}); 
-
-  } 
->>>>>>> aefbc00303d6e237df4bc24097c5fcc55db60f3a
 };
 
 module.exports = productController;

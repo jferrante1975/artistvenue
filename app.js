@@ -1,5 +1,7 @@
+const { urlencoded } = require("express");
 const express = require("express");
 const path = require("path");
+const { urlToHttpOptions } = require("url");
 const app = express();
 const mainRoutes = require("./src/routes/mainRoutes");
 const productsRoutes = require("./src/routes/productsRoutes");
@@ -7,6 +9,8 @@ const usersRoutes = require("./src/routes/usersRoutes");
 const PORT = 3000;
 
 app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 app.set("view engine", "ejs");
 app.set('views',path.join(__dirname,'views'));
 
