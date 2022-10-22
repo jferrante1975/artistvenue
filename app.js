@@ -17,6 +17,7 @@ app.use("/", mainRoutes);
 app.use("/products", productsRoutes);
 app.use("/search", productsRoutes);
 app.use("/users", usersRoutes);
+
 app.use(
   session({
     secret: "V3n3uArt15t2022",
