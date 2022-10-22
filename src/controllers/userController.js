@@ -16,15 +16,6 @@ const userController = {
   },
 
   //All users
-  registerCreate: (req,res) => {
-    res.locals.title = "Home"; 
-    console.log(req.body);
-
-    res.render(path.join(__dirname, "../views/home.ejs"));
-
-    },
-  
-
   users: (req, res) => {
     res.locals.title = "Users";
     res.render(path.join(__dirname, "../views/users/users.ejs"), {

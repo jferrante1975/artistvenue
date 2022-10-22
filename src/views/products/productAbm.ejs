@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/productAbm.css" />
+    <title>Abm de productos</title>
+</head>
+<body>
+    <form action="POST">
+        <label for="nombreArtista">Nombre del Artista</label>
+        <input type="text" name="nombreArtista" required>
+        <label for="ciudad">Ciudad</label>
+        <input type="text" name="ciudad">
+        <label for="provincia">Provincia</label>
+        <input type="text" name="provincia">
+        <label for="categoria">Categoria</label>
+        <input type="text" name="categoria">
+        <label for="integrantes">Integrantes</label>
+        <input type="text" name="integrante" id="">
+        <label for="precio">Precio</label>
+        <input type="text" name="precio" id="">
+        <label for="telefono">Teléfono</label>
+        <input type="text" name="telefono" id="">
+        <label for="descripcion">Descripción</label>
+        <input type="text" name="descripcion" id="">
+        <label for="foto">Foto de Perfil</label>
+        <img src="" alt="Foto de Perfil" width="400px" height="400px">
+        <button type="button" >Cambiar Imagen de Perfil</button>
+        <p>Sube una imagen cuadrada de al menos 400px X 400px</p>
+        <button type="button" >Guardar Foto de Perfil</button>
+    </form>
+    <%- include('../partials/footer') %>  
+
+</body>
+</html>

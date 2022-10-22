@@ -47,14 +47,24 @@ const productController = {
 
     const filtro = req.query.keywords.toLowerCase();
 
-    console.log(filtro);
     let producto = products.filter( producto => { 
             return producto.nombre.toLowerCase().includes(filtro) 
     })
 
     res.render(path.join(__dirname, "../views/products/products.ejs"),{producto}); 
 
-  } 
+  },
+  abm: (req,res) => {
+
+    const productId = req.params.id;
+
+    let producto = products.find((producto) => {
+      return producto.id == productId;
+    });
+
+    res.render(path.join(__dirname, "../views/products/productAbm.ejs"));
+  },
+
 };
 
 module.exports = productController;
