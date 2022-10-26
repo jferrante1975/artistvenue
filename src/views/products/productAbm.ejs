@@ -3,11 +3,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/productAbm.css" />
     <title>Abm de productos</title>
 </head>
 <body>
-    <form action="POST">
+    <%- include('../partials/header') %>
+    <form method="POST" action="#" enctype="multipart/form-data">
         <label for="nombreArtista">Nombre del Artista</label>
         <input type="text" name="nombreArtista" required>
         <label for="ciudad">Ciudad</label>
@@ -25,10 +28,15 @@
         <label for="descripcion">Descripción</label>
         <input type="text" name="descripcion" id="">
         <label for="foto">Foto de Perfil</label>
-        <img src="" alt="Foto de Perfil" width="400px" height="400px">
-        <button type="button" >Cambiar Imagen de Perfil</button>
+        <img src="" alt="Foto de Perfil">
+        <div class="form-group">
+            <input type="file" class="form-control-file" name="uploaded_file">
+            <input type="submit" value="Subir Foto" class="btn btn-default">            
+        </div>
+        <!-- <input type="file" name="avatar" />
+         <button type="button" class="btn" >Cambiar Imagen de Perfil</button> 
         <p>Sube una imagen cuadrada de al menos 400px X 400px</p>
-        <button type="button" >Guardar Foto de Perfil</button>
+        <button type="submit" class="btn" >Guardar Foto de Perfil</button> -->
     </form>
     <%- include('../partials/footer') %>  
 

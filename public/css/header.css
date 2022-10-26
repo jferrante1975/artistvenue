@@ -28,7 +28,7 @@ header {
     padding: 12px 20px;
     transition: 0.5s ease;
     background-color: grey;
-    position: fixed;
+    position: sticky;
     /* background-color:  #2696e9; */
   }
   

@@ -6,3 +6,22 @@
   box-sizing: border-box;
 }
 
+img{
+    width : 200px;
+    height: 200px
+}
+
+form{
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: .5em 0 0 0;
+  }
+
+  .btn {
+    
+    display: block;
+    margin: 1em 0;
+  }

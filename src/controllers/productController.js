@@ -1,3 +1,5 @@
+const express = require('express')
+const app = express();
 const path = require("path");
 const fs = require("fs");
 
@@ -58,12 +60,24 @@ const productController = {
 
     const productId = req.params.id;
 
-    let producto = products.find((producto) => {
+    let productos = products.find((producto) => {
       return producto.id == productId;
     });
 
     res.render(path.join(__dirname, "../views/products/productAbm.ejs"));
   },
+  create: (req,res) => {
+
+    console.log(req.body);
+
+    const productId = req.params.id;
+
+    let productos = products.find((producto) => {
+      return producto.id == productId;
+    });
+
+    res.redirect(path.join(__dirname, "../views/products/productAbm.ejs"));
+  }
 
 };
 
