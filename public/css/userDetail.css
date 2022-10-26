@@ -206,6 +206,43 @@ div.form-elements .data h4 {
   padding-top: 15px;
 }
 
+div.save {
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+
+div.save .btnSave {
+  background: #e92626;
+  width: 100%;
+  color: white;
+  padding: 8px 18px;
+  font-size: 0.9em;
+  text-decoration: none;
+  border-color: #e92626;
+  /* border: #2696e9 solid 0.5px; */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnCancel {
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.btnCancel a {
+  background: #8a8888;
+  color: white;
+  padding: 8px 18px;
+  font-size: 0.9em;
+  text-decoration: none;
+  border: #8a8888 solid 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
 @media (min-width: 768px) {
   div.avatar .avatar-img {
     border-radius: 60%;

@@ -88,6 +88,16 @@ div.form-elements .data {
   padding-left: 20px;
 }
 
+div.form-elements .errors {
+  color: tomato;
+  text-align: left;
+  font-size: 0.7rem;
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
 .btnUpload {
   text-align: center;
   display: inline-block;
@@ -117,15 +127,17 @@ div.user .username {
   padding: 16px 21.6px;
 }
 div.save {
-  padding-bottom: 30px;
-  padding-top: 15px;
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-top: 30px;
+
 }
 
 div.save .btnSave {
   background: #2696e9;
-  width: 85%;
   color: white;
-  padding: 8px 18px;
+  padding: 7.5px 22px;
   font-size: 0.9em;
   text-decoration: none;
   border: #2696e9 solid 0.5px;
@@ -202,12 +214,12 @@ input[type="file"] {
 }
 
 .btnEdit a {
-  background: #2696e9;
+  background: #8a8888;
   color: white;
-  padding: 8px 30px;
+  padding: 8px 20px;
   font-size: 0.9em;
   text-decoration: none;
-  border: #2696e9 solid 0.5px;
+  border: #8a8888 solid 0.5px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -247,7 +259,11 @@ input[type="file"] {
   .fa-circle-plus{
     left: 75px;
   }
-  
+
+  div.form-elements .errors {
+    padding-left: 50px;
+  }
+ 
 }
 
 @media (min-width: 1024px) {
@@ -280,10 +296,12 @@ input[type="file"] {
   .fa-circle-plus{
     left: 80px;
   }
-  
+
+  div.form-elements .errors {
+    padding-left: 40px;
+  }
+ 
 }
-
-
 
 @media (min-width: 1440px) {
   main div.detail-container {
@@ -315,6 +333,10 @@ input[type="file"] {
     padding-left: 50px;
   }
   
+  div.form-elements .errors {
+    padding-left: 50px;
+  }
+
 }
 
 @media (min-width: 1920px) {
@@ -348,6 +370,11 @@ input[type="file"] {
     padding-left: 10px;
     /* padding-top: 15px; */
   }
+
+  div.form-elements .errors {
+    padding-left: 60px;
+  }
+
 }
 
 @media (min-width: 2560px) {
@@ -355,4 +382,11 @@ input[type="file"] {
     padding-left: 45px;
     padding-top: 15px;
   }
+
+  div.form-elements .errors {
+    padding-left: 100px;
+  }
+
 }
+
+

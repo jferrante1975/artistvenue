@@ -18,7 +18,11 @@
           </div>
           <!-- avatar -->
           <div class="avatar">
-            <img class="avatar-img" src="/images/profile/<%= user.image %>" alt="" />
+            <img
+              class="avatar-img"
+              src="/images/profile/<%= user.image %>"
+              alt=""
+            />
             <h3></h3>
           </div>
         </div>
@@ -33,7 +37,7 @@
             <div class="data">
               <h4>Nombre</h4>
             </div>
-            
+
             <input
               type="text"
               name="name"
@@ -115,12 +119,22 @@
               value="<%= user.status %>"
               disabled
             />
-            <div class="buttons">
-              <div class="btnEdit">
-                <a href="/users/edit/<%= user.id %>">Editar</a>
-              </div>
-              <div class="btnDelete">
-                <a href="/">Eliminar</a>
+            <div class="save">
+              <div class="buttons">
+                <div class="btnCancel">
+                  <a href="/users"><i class="fa-solid fa-rotate-left"></i> Cancelar</a>
+                </div>
+                <div class="btnEdit">
+                  <a href="/users/edit/<%= user.id %>"><i class="fa-regular fa-pen-to-square"></i> Editar</a>
+                </div>
+
+                <form
+                  action="/users/delete/<%= user.id %>?_method=DELETE"
+                  method="POST"
+                  style="display: inline-flex"
+                >
+                  <button type="submit" class="btnSave"><i class="fa-regular fa-trash-can"></i> Eliminar</button>
+                </form>
               </div>
             </div>
           </div>

@@ -8,16 +8,22 @@
 }
 
 body main {
-  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+body main .container{
   font-size: 13px;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 body main div.container-users {
   padding-top: 100px;
-  width: 90%;
+  width: 100%;
 
 }
 
@@ -31,14 +37,47 @@ body main div.container-users {
 .btnAddUser a {
   background: #2696e9;
   color: white;
-  padding: 8px 7px;
-  font-size: 1em;
+  padding: 8px 12px;
+  font-size: 1.1em;
   text-decoration: none;
   border: #2696e9 solid 0.5px;
   border-radius: 2px;
 }
 
 footer {
-  display: grid;
-  align-self: end;
+ width: 100%;
+
 }
+
+#userSearch {
+  width: 100%; 
+  font-size: 16px; 
+  padding: 12px 20px 12px 20px; 
+  border: 1px solid rgb(195, 197, 199); 
+  margin-top: 10px;
+  margin-bottom: 20px; 
+}
+
+#errors {
+  text-align: left;
+  margin-bottom: 5px;
+  color: tomato;
+  
+}
+
+@media (min-width: 768px) {
+  #userSearch {
+    width: 40%; 
+  }
+}
+
+@media (min-width: 1024px) {
+  #userSearch {
+    width: 30%; 
+  }
+}
+
+@media (min-width: 1920px) {
+ 
+}
+
