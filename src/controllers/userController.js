@@ -1,9 +1,13 @@
 const path = require("path");
 const fs = require("fs");
-const { validationResult } = require("express-validator");
+const crypto = require('crypto');
+const bcrypt = require('bcryptjs')
 
 const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
+const userLoginInfoFilePath = path.join(__dirname, '../data/userLoginInfo.json');
+const usersLoginInfo = JSON.parse(fs.readFileSync(userLoginInfoFilePath, 'utf-8'));
 
 const userController = {
   register: (req, res) => {
@@ -139,6 +143,12 @@ const userController = {
       ...req.body,
       image: image,
     };
+    console.log(newUser.pws)
+
+    //encriptamos la contrasenia y borramos el password para q no se guarde en nuestro json
+			newUser.pws = bcrypt.hashSync(req.body.pws, 10);
+			delete newUser.repassword
+
     users.push(newUser);
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null, " "));
     res.redirect("/users");

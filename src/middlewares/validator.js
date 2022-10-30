@@ -28,7 +28,7 @@ exports.formUser = [
     .bail()
     .isLength({ min: 8 })
     .withMessage("El password debe tener minimo 8 caracteres"),
-  check("re-pws")
+  check("repassword")
     .notEmpty()
     .withMessage("Debe reingresar el password"),
   (req, res, next) => {

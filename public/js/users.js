@@ -33,26 +33,26 @@ function searchUser() {
 
 function checkPasswordMatch() {
   var password = $("#pws").val();
-  var confirmPassword = $("#re-pws").val();
+  var confirmPassword = $("#repassword").val();
 
   if (!password){
     $("#checkPws").html("");
     $("#pws").css("background-color", "#FFFFFF");
-    $("#re-pws").css("background-color", "#FFFFFF");
-    $("#re-pws").val("");
+    $("#repassword").css("background-color", "#FFFFFF");
+    $("#repassword").val("");
   }
   else if (password != confirmPassword){
     // $("#checkPws").html("Passwords no coinciden!");
     $("#pws").css("background-color", "#F9A28F");
-    $("#re-pws").css("background-color", "#F9A28F");
+    $("#repassword").css("background-color", "#F9A28F");
   }
   else{
     // $("#checkPws").html("Passwords coinciden.");
     $("#pws").css("background-color", "#DAF7A6");
-    $("#re-pws").css("background-color", "#DAF7A6");
+    $("#repassword").css("background-color", "#DAF7A6");
   } 
 }
 
 $(document).ready(function () {
-  $("#pws, #re-pws").keyup(checkPasswordMatch);
+  $("#pws, #repassword").keyup(checkPasswordMatch);
 });

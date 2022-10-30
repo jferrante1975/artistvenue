@@ -1,51 +1,58 @@
 [
  {
-  "id": 2,
-  "first_name": "Andrew",
-  "last_name": "Lightweis",
-  "email": "alightweis@squidoo.com",
-  "country": "argentina",
+  "id": 1,
+  "first_name": "Maier",
+  "last_name": "CR",
+  "email": "maier.cr@roaysf.com",
+  "country": "usa",
   "rol": "admin",
   "status": "activo",
   "pws": "V06IYH9O",
-  "re-pws": "V06IYH9O",
-  "image": "image-1666746804417.jpeg"
+  "image": "default.webp"
+ },
+ {
+  "id": 2,
+  "first_name": "Javier",
+  "last_name": "Ferrante",
+  "country": "argentina",
+  "email": "jferrante@squidoo.com",
+  "pws": "V06IYH9O",
+  "image": "default.webp",
+  "rol": "admin",
+  "status": "activo"
  },
  {
   "id": 3,
   "first_name": "Holly",
   "last_name": "Andrzejczak",
-  "email": "handrzejczak2@dell.com",
   "country": "peru",
-  "rol": "artista",
-  "status": "activo",
+  "email": "handrzejczak2@dell.com",
   "pws": "pNlK2L5OD",
-  "re-pws": "pNlK2L5OD",
-  "image": "default.webp"
+  "image": "default.webp",
+  "rol": "artista",
+  "status": "activo"
  },
  {
   "id": 4,
   "first_name": "Garey",
   "last_name": "Modric",
-  "email": "gcaldecot3@woothemes.com",
   "country": "usa",
-  "rol": "artista",
-  "status": "inactivo",
+  "email": "gcaldecot3@woothemes.com",
   "pws": "EijA3pdJZ1",
-  "re-pws": "EijA3pdJZ1",
-  "image": "default.webp"
+  "image": "default.webp",
+  "rol": "artista",
+  "status": "inactivo"
  },
  {
   "id": 5,
   "first_name": "Poul",
   "last_name": "McDavid",
-  "email": "pmcdavid4@stumbleupon.com",
   "country": "usa",
-  "rol": "usuario",
-  "status": "activo",
+  "email": "pmcdavid4@stumbleupon.com",
   "pws": "swOa16sE",
-  "re-pws": "swOa16sE",
-  "image": "default.webp"
+  "image": "default.webp",
+  "rol": "usuario",
+  "status": "activo"
  },
  {
   "id": 6,
@@ -95,12 +102,33 @@
   "id": 10,
   "first_name": "Silvia",
   "last_name": "Penzimer",
-  "email": "sfrodsham9@archive.org",
   "country": "usa",
+  "email": "sfrodsham9@archive.org",
+  "pws": "3TAbH7",
+  "image": "default.webp",
+  "rol": "artista",
+  "status": "activo"
+ },
+ {
+  "id": 11,
+  "first_name": "Taylor",
+  "last_name": "jhgjjjfjgjh",
+  "email": "dacikey477@adroh.com",
+  "country": "argentina",
   "rol": "artista",
   "status": "activo",
-  "pws": "3TAbH744",
-  "re-pws": "3TAbH744",
+  "pws": "$2a$10$cmfOcm6a3sL5fNH0lFsFUOLF9s.CxiCm63NlzQ5i9xPjxoIXU05ii",
+  "image": "default.webp"
+ },
+ {
+  "id": 12,
+  "first_name": "Andrew",
+  "last_name": "West",
+  "email": "dacikey477@adroh.com",
+  "country": "usa",
+  "rol": "admin",
+  "status": "activo",
+  "pws": "$2a$10$4MLnbHfvovIdbAhEhDpOWu/WzVFp/sbObwvoNWn106mQ8bAIPIbIO",
   "image": "default.webp"
  }
 ]

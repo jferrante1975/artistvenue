@@ -3,6 +3,8 @@ const router = express.Router();
 const multer = require('multer');
 const { check } = require("express-validator");
 const validator = require('../middlewares/validator')
+const guestRoute = require('../middlewares/guestRoute');
+const userRoute = require('../middlewares/userRoute');
 const userController = require("../controllers/userController");
 
 // ************ Multer ************ 
@@ -16,8 +18,16 @@ var storage = multer.diskStorage({
 })
 var upload = multer({storage: storage})
 
-router.get("/login", userController.login);
-router.get("/register", userController.register);
+
+//Mostramos el formulario de login
+router.get('/login',guestRoute,userController.login)
+//hacer el post de formulario de login
+router.post('/login',guestRoute,userController.authenticate)
+
+//logout
+router.post('/logout',userRoute,userController.logout)
+
+router.get('/profile', userRoute, userController.profile);
 
 router.get("/", userController.users);
 router.get("/detail/:id", userController.detail);

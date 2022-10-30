@@ -106,7 +106,7 @@
                 </div>
                 <input id="pws" type="password" name="pws" placeholder="ingresa un password" required minlength="8"
                   value="<%= typeof old != 'undefined' ? old.pws : '' %>" />
-                <input id="re-pws" type="password" name="re-pws" placeholder="Reingresa el password" required
+                <input id="repassword" type="password" name="repassword" placeholder="Reingresa el password" required
                   minlength="8" value="<%= typeof old != 'undefined' ? old.pws : '' %>"
                   onChange="checkPasswordMatch();" />
               </div>
