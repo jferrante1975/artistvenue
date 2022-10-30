@@ -22,14 +22,14 @@ const userController = {
   },
   authenticate: (req, res) => {
     //PRIMERO Q TODO HACEMOS LOGICA PARA GUARDAR LOS DATOS DEL LOGIN EN UN JSON
-    const { email, password } = req.body;
+    const { email, pws } = req.body;
 
     //verifico si el mail q puso en el formulario esta en nuestra db
     let user = users.find((user) => user.email == email);
 
     if (user) {
       // y la contraseña es correcta...
-      if (bcrypt.compareSync(password, user.password)) {
+      if (bcrypt.compareSync(pws, user.pws)) {
         // Eliminamos los datos sensibles y guardamos el usuario en sesión
         delete user.password;
 
@@ -68,7 +68,7 @@ const userController = {
       }
     } else {
       // Si el email no existe
-      return res.render("login", {
+      return res.render(path.join(__dirname, "../views/users/login.ejs"), {
         old: req.body,
         errors: {
           email: "El email o la contraseña son inválidos",
@@ -77,7 +77,9 @@ const userController = {
     }
   },
   profile: (req, res) => {
-    res.render("profile");
+    res.render(path.join(__dirname, "../views/users/profile.ejs"), {
+      title: "Profile",
+    });
   },
   logout: (req, res) => {
     // Borramos el registro de la base de datos si existe

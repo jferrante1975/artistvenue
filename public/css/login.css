@@ -91,13 +91,24 @@ form h2 {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="checkbox"] {
   padding: 15px 20px;
   margin-top: 8px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
+}
+
+div.control {
+  color: #757575;
+
+}
+
+div.control label {
+  padding-left: 5px;
+
 }
 
 .btnEnter {
@@ -159,6 +170,18 @@ input[type="password"] {
   background-color: #ebebeb;
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
   cursor: not-allowed;
+}
+
+div.errors {
+  color: tomato;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+div.form-elements .errors h4 {
+  font-size: 0.9rem !important;
 }
 
 @media (min-width: 768px) {

@@ -105,6 +105,10 @@ div.form-elements .data h4 {
   margin-bottom: 0px !important;
 }
 
+div.form-elements .errors h4 {
+  font-size: 0.9rem !important;
+}
+
 
 .btnUpload {
   text-align: center;

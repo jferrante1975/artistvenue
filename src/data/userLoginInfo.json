@@ -1,1 +1,14 @@
-[]
+[
+ {
+  "id": 13,
+  "first_name": "Mark",
+  "last_name": "Risk",
+  "email": "mrisk@gmail.com",
+  "country": "usa",
+  "rol": "admin",
+  "status": "activo",
+  "pws": "$2a$10$KGspfUiDhyJYEeuTScPsOOAjrw/mgSc5sxCsX7JPlUtEMuUhjttCK",
+  "image": "default.webp",
+  "token": "z1Hah997cJqOyvyWwbSSh6bgZFhmVrWFUl9qENH6jryNjpcHal//gmmXB9N0f6YThPpdWyBvIFfyf//x3u8t8A=="
+ }
+]

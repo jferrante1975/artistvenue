@@ -130,5 +130,16 @@
   "status": "activo",
   "pws": "$2a$10$4MLnbHfvovIdbAhEhDpOWu/WzVFp/sbObwvoNWn106mQ8bAIPIbIO",
   "image": "default.webp"
+ },
+ {
+  "id": 13,
+  "first_name": "Mark",
+  "last_name": "Risk",
+  "email": "mrisk@gmail.com",
+  "country": "usa",
+  "rol": "admin",
+  "status": "activo",
+  "pws": "$2a$10$KGspfUiDhyJYEeuTScPsOOAjrw/mgSc5sxCsX7JPlUtEMuUhjttCK",
+  "image": "default.webp"
  }
 ]
