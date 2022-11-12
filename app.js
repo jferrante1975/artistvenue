@@ -10,6 +10,7 @@ const productsRoutes = require("./src/routes/productsRoutes");
 const usersRoutes = require("./src/routes/usersRoutes");
 const session = require("express-session");
 const auth = require('./src/middlewares/auth');
+const userLoggedMiddleware = require('./src/middlewares/userLoggedMiddleware');
 const PORT = 3000;
 
 app.use(express.static(path.join(__dirname, "/public")));
@@ -28,7 +29,7 @@ app.use(
   })
 );
 app.use(auth);
-
+app.use(userLoggedMiddleware);
 app.use("/", mainRoutes);
 app.use("/products", productsRoutes);
 app.use("/search", productsRoutes);

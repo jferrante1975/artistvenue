@@ -1,13 +1,13 @@
-window.onload = function () {
-  //Javacript of responsive navigation menu
-  const menuBtn = document.querySelector(".menu-btn");
-  const navigation = document.querySelector(".navigation");
+// window.onload = function () {
+//   //Javacript of responsive navigation menu
+//   const menuBtn = document.querySelector(".menu-btn");
+//   const navigation = document.querySelector(".navigation");
 
-  menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("active");
-    navigation.classList.toggle("active");
-  });
-};
+//   menuBtn.addEventListener("click", () => {
+//     menuBtn.classList.toggle("active");
+//     navigation.classList.toggle("active");
+//   });
+// };
 
 
 var input = document.getElementById("image");

@@ -1,24 +1,100 @@
 <header>
-  <a href="/" class="brand">ArtistVenue</a>
+  <!-- <a href="/" class="brand">ArtistVenue</a>
   <div class="menu-btn"></div>
 
   <div class="navigation">
     <div class="navigation-items">
-
-      <a href="#">Buscar Músicos</a>
-      <a href="/products/cart">Carrito</a>
-      <a href="/users/register">Registrarte</a>
-      <% if (typeof user != undefined ) { %>
-      <form id="logout" action="/users/logout" method="POST" class="logout-form">
-        <a href="javascript:;" onclick="document.getElementById('logout').submit();">LogOut</a>
-          <img id="login-img" src="/images/profile/<%= user.image %>" alt="">
-      </form>
-      <%} else { %>
+      
+        <a href="#">Buscar Músicos</a>
+        <a href="/products/cart">Carrito</a>
+        <a href="/users/register">Registrarte</a>
         <form id="logout" action="/users/login" method="POST" class="logout-form">
-          <a href="/users/login">LogIn</a>
-            <img id="login-img" src="/images/profile/default.webp" alt="">
+          <a href="/users/logout">LogOut</a>
+            <img id="logout-img" src="/images/profile/<%= user.image %>" alt="">
         </form>
-      <% } %>
+
+      
     </div>
-  </div>
+  </div> -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarRightAlignExample"
+        aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">ArtistVenue</a>
+        <!-- Left links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Buscar Músicos</a>
+          </li>
+          <% if (!locals.isLogged) { %>
+          <button type="button" class="btn btn-link px-3 me-2" onclick="location.replace('/users/login')">
+            Login
+          </button>
+          <button type="button" class="btn btn-primary me-3" onclick="location.replace('/users/register')">
+            Registrate
+          </button>
+          <% } else { %>
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+              <!-- Icon -->
+              <a class="link-secondary me-3" href="/products/cart">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+
+              <!-- Notifications -->
+              <div class="dropdown">
+                <a class="link-secondary me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                  role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-bell"></i>
+                  <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="#">Nuevos Artistas!</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ultimas noticias</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ofertas</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Avatar -->
+              <div class="dropdown">
+                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+                  role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                  <img src="/images/profile/<%= user.image %>" class="rounded-circle" height="25"
+                    alt="Black and White Portrait of a Man" loading="lazy" />
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                  <li>
+                    <a class="dropdown-item" href="/users/profile">Mi perfil</a>
+                  </li>
+                  <li>
+                    <form action="/users/logout" method="POST">
+                      <a class="dropdown-item" href=""
+                      onclick="this.closest('form').submit();return false;">LogOut</a>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Right elements -->
+            <% }%>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
 </header>

@@ -1,12 +1,12 @@
 window.onload = function () {
   //Javacript of responsive navigation menu
-  const menuBtn = document.querySelector(".menu-btn");
-  const navigation = document.querySelector(".navigation");
+  // const menuBtn = document.querySelector(".menu-btn");
+  // const navigation = document.querySelector(".navigation");
 
-  menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("active");
-    navigation.classList.toggle("active");
-  });
+  // menuBtn.addEventListener("click", () => {
+  //   menuBtn.classList.toggle("active");
+  //   navigation.classList.toggle("active");
+  // });
 
   w =
     document.documentElement.clientWidth ||
