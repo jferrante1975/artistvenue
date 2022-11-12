@@ -111,13 +111,13 @@
  },
  {
   "id": 11,
-  "first_name": "Maier",
-  "last_name": "CRdddd",
-  "email": "maier.cr@roaysf.com",
+  "first_name": "James",
+  "last_name": "Hype",
+  "email": "james.hype@gmail.com",
   "country": "usa",
-  "rol": "admin",
+  "rol": "artista",
   "status": "activo",
-  "pws": "$2a$10$eDni0dm2Otr9yJjl1abjDuveQfCnySP6WabbuQ8Lgqo06.8InhNmy",
-  "image": "default.webp"
+  "pws": "$2a$10$qVwj1CSdT4tC4Dud.grtsuhw51j.K2vUx0DbUPr6wUIcTFeHDBkh2",
+  "image": "image-1668280617099.jpeg"
  }
 ]

@@ -8,10 +8,12 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-
-.type-header {
-  padding: 100px 5px 5px 20px;
-  text-align: left;
-  font-size: 1em;
+#typeName {
+  border: 1px white solid !important;
 }
 
+@media (min-width: 1025px) {
+  .h-custom {
+  height: 100vh !important;
+  }
+  }
