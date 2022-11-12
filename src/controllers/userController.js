@@ -175,10 +175,10 @@ const userController = {
   // Update Method
   update: (req, res) => {
     let id = req.params.id;
-
+    
     let userToEdit = users.find((user) => user.id == id);
     let image;
-
+    console.log(userToEdit)
     if (req.files[0] != undefined) {
       image = req.files[0].filename;
     } else {
@@ -190,7 +190,10 @@ const userController = {
       ...req.body,
       image: image,
     };
-
+    //encriptamos la contrasenia y borramos el password para q no se guarde en nuestro json
+    userToEdit.pws = bcrypt.hashSync(req.body.pws, 10);
+    delete userToEdit.repassword;
+    
     let newUsers = users.map((user) => {
       if (user.id == userToEdit.id) {
         return (user = { ...userToEdit });

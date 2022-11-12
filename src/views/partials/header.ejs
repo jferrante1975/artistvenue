@@ -1,17 +1,24 @@
 <header>
-    <a href="/" class="brand">ArtistVenue</a>
-    <div class="menu-btn"></div>
+  <a href="/" class="brand">ArtistVenue</a>
+  <div class="menu-btn"></div>
 
-    <div class="navigation">
-      <div class="navigation-items">
-        
-        <a href="#">Buscar Músicos</a>
-        <a href="/products/cart">Carrito</a>
-        <a href="/users/register">Registrarte</a>
-        <a href="/users/logout">Logout</a>
-        <img id="login-img" src="/images/profile/<%= user.image %>" alt="">
+  <div class="navigation">
+    <div class="navigation-items">
 
-        
-      </div>
+      <a href="#">Buscar Músicos</a>
+      <a href="/products/cart">Carrito</a>
+      <a href="/users/register">Registrarte</a>
+      <% if (typeof user != undefined ) { %>
+      <form id="logout" action="/users/logout" method="POST" class="logout-form">
+        <a href="javascript:;" onclick="document.getElementById('logout').submit();">LogOut</a>
+          <img id="login-img" src="/images/profile/<%= user.image %>" alt="">
+      </form>
+      <%} else { %>
+        <form id="logout" action="/users/login" method="POST" class="logout-form">
+          <a href="/users/login">LogIn</a>
+            <img id="login-img" src="/images/profile/default.webp" alt="">
+        </form>
+      <% } %>
     </div>
-  </header>
+  </div>
+</header>

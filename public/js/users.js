@@ -52,7 +52,3 @@ function checkPasswordMatch() {
     $("#repassword").css("background-color", "#DAF7A6");
   } 
 }
-
-$(document).ready(function () {
-  $("#pws, #repassword").keyup(checkPasswordMatch);
-});

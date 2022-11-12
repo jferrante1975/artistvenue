@@ -2,24 +2,24 @@
   {
    "id": 1,
    "first_name": "Maier",
-   "last_name": "CR",
+   "last_name": "Carvajal",
    "email": "maier.cr@roaysf.com",
    "country": "usa",
    "rol": "admin",
    "status": "activo",
-   "pws": "V06IYH9O",
-   "image": "image-1666322845143.jpeg"
+   "pws": "$2a$10$uqy3QCG6Npcausiz5F/84upbqjrceJX9uImvExkvKL3bwj.sfBpPG",
+   "image": "image-1668228609052.jpeg"
   },
   {
    "id": 2,
    "first_name": "Javier",
    "last_name": "Ferrante",
-   "country": "argentina",
    "email": "jferrante@squidoo.com",
-   "pws": "V06IYH9O",
-   "image": "default.png",
+   "country": "argentina",
    "rol": "admin",
-   "status": "activo"
+   "status": "activo",
+   "pws": "V06IYH9O",
+   "image": "default.webp"
   },
   {
    "id": 3,
@@ -28,7 +28,7 @@
    "country": "peru",
    "email": "handrzejczak2@dell.com",
    "pws": "pNlK2L5OD",
-   "image": "default.png",
+   "image": "default.webp",
    "rol": "artista",
    "status": "activo"
   },
@@ -39,7 +39,7 @@
    "country": "usa",
    "email": "gcaldecot3@woothemes.com",
    "pws": "EijA3pdJZ1",
-   "image": "default.png",
+   "image": "default.webp",
    "rol": "artista",
    "status": "inactivo"
   },
@@ -50,7 +50,7 @@
    "country": "usa",
    "email": "pmcdavid4@stumbleupon.com",
    "pws": "swOa16sE",
-   "image": "default.png",
+   "image": "default.webp",
    "rol": "usuario",
    "status": "activo"
   },
@@ -61,7 +61,7 @@
    "country": "peru",
    "email": "cclemo5@posterous.com",
    "pws": "dCimR25w",
-   "image": "default.png",
+   "image": "default.webp",
    "rol": "usuario",
    "status": "inactivo"
   },
@@ -72,7 +72,7 @@
    "country": "usa",
    "email": "gmulvey6@ameblo.jp",
    "pws": "dWNQRRc",
-   "image": "default.png",
+   "image": "default.webp",
    "rol": "artista",
    "status": "inactivo"
   },
@@ -83,7 +83,7 @@
    "country": "argentina",
    "email": "agasking7@jalbum.net",
    "pws": "xvoxGK3YWbJt",
-   "image": "default.png",
+   "image": "default.webp",
    "rol": "artista",
    "status": "activo"
   },
@@ -94,7 +94,7 @@
    "country": "argentina",
    "email": "tpurton8@acquirethisname.com",
    "pws": "xNQq6BckNCYB",
-   "image": "default.png",
+   "image": "default.webp",
    "rol": "usuario",
    "status": "inactivo"
   },
@@ -105,8 +105,19 @@
    "country": "usa",
    "email": "sfrodsham9@archive.org",
    "pws": "3TAbH7",
-   "image": "default.png",
+   "image": "default.webp",
    "rol": "artista",
    "status": "activo"
+  },
+  {
+   "id": 11,
+   "first_name": "Maier",
+   "last_name": "CRdddd",
+   "email": "maier.cr@roaysf.com",
+   "country": "usa",
+   "rol": "admin",
+   "status": "activo",
+   "pws": "$2a$10$eDni0dm2Otr9yJjl1abjDuveQfCnySP6WabbuQ8Lgqo06.8InhNmy",
+   "image": "default.webp"
   }
  ]

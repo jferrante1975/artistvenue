@@ -2,24 +2,24 @@
  {
   "id": 1,
   "first_name": "Maier",
-  "last_name": "CR",
+  "last_name": "Carvajal",
   "email": "maier.cr@roaysf.com",
   "country": "usa",
   "rol": "admin",
   "status": "activo",
-  "pws": "V06IYH9O",
-  "image": "default.webp"
+  "pws": "$2a$10$uqy3QCG6Npcausiz5F/84upbqjrceJX9uImvExkvKL3bwj.sfBpPG",
+  "image": "image-1668228609052.jpeg"
  },
  {
   "id": 2,
   "first_name": "Javier",
   "last_name": "Ferrante",
-  "country": "argentina",
   "email": "jferrante@squidoo.com",
-  "pws": "V06IYH9O",
-  "image": "default.webp",
+  "country": "argentina",
   "rol": "admin",
-  "status": "activo"
+  "status": "activo",
+  "pws": "V06IYH9O",
+  "image": "default.webp"
  },
  {
   "id": 3,
@@ -111,35 +111,13 @@
  },
  {
   "id": 11,
-  "first_name": "Taylor",
-  "last_name": "jhgjjjfjgjh",
-  "email": "dacikey477@adroh.com",
-  "country": "argentina",
-  "rol": "artista",
-  "status": "activo",
-  "pws": "$2a$10$cmfOcm6a3sL5fNH0lFsFUOLF9s.CxiCm63NlzQ5i9xPjxoIXU05ii",
-  "image": "default.webp"
- },
- {
-  "id": 12,
-  "first_name": "Andrew",
-  "last_name": "West",
-  "email": "dacikey477@adroh.com",
+  "first_name": "Maier",
+  "last_name": "CRdddd",
+  "email": "maier.cr@roaysf.com",
   "country": "usa",
   "rol": "admin",
   "status": "activo",
-  "pws": "$2a$10$4MLnbHfvovIdbAhEhDpOWu/WzVFp/sbObwvoNWn106mQ8bAIPIbIO",
-  "image": "default.webp"
- },
- {
-  "id": 13,
-  "first_name": "Mark",
-  "last_name": "Risk",
-  "email": "mrisk@gmail.com",
-  "country": "usa",
-  "rol": "admin",
-  "status": "activo",
-  "pws": "$2a$10$KGspfUiDhyJYEeuTScPsOOAjrw/mgSc5sxCsX7JPlUtEMuUhjttCK",
+  "pws": "$2a$10$eDni0dm2Otr9yJjl1abjDuveQfCnySP6WabbuQ8Lgqo06.8InhNmy",
   "image": "default.webp"
  }
 ]
