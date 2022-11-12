@@ -21,6 +21,7 @@ const userController = {
     });
   },
   login: (req, res) => {
+    console.log(req.session)
     res.render(path.join(__dirname, "../views/users/login.ejs"), {
       title: "Login",
     });
