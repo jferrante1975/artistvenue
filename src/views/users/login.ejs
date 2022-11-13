@@ -24,14 +24,6 @@
           <p class="register">
             No tienes una cuenta? <a href="/users/register"> Registrate</a>
           </p>
-
-          <div class="google">
-            <button type="button" class="login-with-google-btn">
-              Ingresa con Google
-            </button>
-          </div>
-
-          <p class="else"><span>o</span></p>
           <div class="errors">
             <% if (typeof errors !='undefined' ) { %>
             <h4>
@@ -66,7 +58,7 @@
             <label for="remember" class="form-label">Recordar mis datos</label>
           </div>
           <button type="submit" class="btnEnter">Ingresa</button>
-          <a class="forgetPass" href="#">Olvidaste tu password?</a>
+          <a class="forgetPass" href="/users/reset">Olvidaste tu password?</a>
         </form>
       </div>
     </main>

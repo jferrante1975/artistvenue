@@ -22,27 +22,29 @@ var upload = multer({storage: storage})
 router.get('/register',guestRoute,userController.register)
 
 //hacer post del formulario de registro
-router.post('/',upload.any(), validator.formUser, userController.store)
+router.post('/',guestRoute, upload.any(), validator.formUser, userController.store)
 
 //Mostramos el formulario de login
-router.get('/login',guestRoute,userController.login)
+router.get('/login',userController.login)
 //hacer el post de formulario de login
-router.post('/login',guestRoute,userController.authenticate)
+router.post('/login',userController.authenticate)
+
+router.get('/reset',userController.reset)
 
 //logout
 router.post('/logout',userRoute,userController.logout)
 
 router.get('/profile', userRoute, userController.profile);
 
-router.get("/", userController.users);
-router.get("/detail/:id", userController.detail);
+router.get("/", userRoute,userController.users);
+router.get("/detail/:id", userRoute,userController.detail);
 
-router.get('/create', userController.create); 
-router.post('/', upload.any(), validator.formUser, userController.store); 
+router.get('/create', userRoute,userController.create); 
+router.post('/', userRoute, upload.any(), validator.formUser, userController.store); 
 
-router.get("/edit/:id", userController.edit);
-router.patch('/edit/:id', upload.any(), validator.formUser, userController.update);
+router.get("/edit/:id", userRoute,userController.edit);
+router.patch('/edit/:id', userRoute,upload.any(), validator.formUser, userController.update);
 
-router.delete('/delete/:id', userController.destroy); 
+router.delete('/delete/:id', userRoute,userController.destroy); 
 
 module.exports = router;

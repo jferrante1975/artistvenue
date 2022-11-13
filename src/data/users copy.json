@@ -12,11 +12,11 @@
   },
   {
    "id": 2,
-   "first_name": "Javier",
-   "last_name": "Ferrante",
-   "email": "jferrante@squidoo.com",
-   "country": "argentina",
-   "rol": "admin",
+   "first_name": "Daniella",
+   "last_name": "Porter",
+   "email": "daniella@squidoo.com",
+   "country": "usa",
+   "rol": "usuario",
    "status": "activo",
    "pws": "V06IYH9O",
    "image": "default.webp"

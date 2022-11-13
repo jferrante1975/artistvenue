@@ -11,7 +11,8 @@ const usersRoutes = require("./src/routes/usersRoutes");
 const session = require("express-session");
 const auth = require('./src/middlewares/auth');
 const userLoggedMiddleware = require('./src/middlewares/userLoggedMiddleware');
-const PORT = 3000;
+const PORT = 3001;
+
 
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.urlencoded({extended: false}));

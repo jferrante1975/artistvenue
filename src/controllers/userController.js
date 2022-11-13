@@ -110,6 +110,12 @@ const userController = {
     // Redirigimos a la home
     res.redirect("/");
   },
+  reset: (req, res) => {
+    console.log(req.session)
+    res.render(path.join(__dirname, "../views/users/reset.ejs"), {
+      title: "Password Reset",
+    });
+  },
 
   //All users
   users: (req, res) => {

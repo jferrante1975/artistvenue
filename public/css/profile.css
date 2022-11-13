@@ -1,8 +1,13 @@
 div.detail-container {
     background-color: white !important;
+    margin-bottom: 470px;
 }
 
 h2 {
     background-color: white !important;
     margin-bottom: 0 !important;
+}
+
+main {
+    background-color: white !important;;
 }

@@ -11,17 +11,6 @@
   "image": "image-1668228609052.jpeg"
  },
  {
-  "id": 2,
-  "first_name": "Javier",
-  "last_name": "Ferrante",
-  "email": "jferrante@squidoo.com",
-  "country": "argentina",
-  "rol": "admin",
-  "status": "activo",
-  "pws": "V06IYH9O",
-  "image": "default.webp"
- },
- {
   "id": 3,
   "first_name": "Holly",
   "last_name": "Andrzejczak",
