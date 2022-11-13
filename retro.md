@@ -1,8 +1,12 @@
-1. Comenzar hacer: -      Unificar los disenos-       asignar las atividades maximo un dia despues de que el spring haya sido publicado( via slack, via whatsapp)
-7:56
-2. Que debemos hacer mas:  -al menos una reunion semanal con los miembros que puedan y luego se mandan las conclusiones o un pequenos resumenes .     -      las decisiones se deben tomar en concenso y aprobadas por la mitad mas uno.
-8:00
+NOTA: El grupo que inicialmente fue conformado por 5 personas solo se mantuvo un par de semanas, 3 de estas personas nunca aportaron nada al proyecto y nunca tuvimos noticias de ellas por lo que se procedio a asumir las tareas pendientes y futuras por parte de las dos personas que quedamos.
+
+
+1. Comenzar hacer: -      Mantener el orden del desarrollo para no generar conflictos entre las versiones en github.
+
+2. Que debemos hacer mas:  -al menos una reunion/llamada semanal para determinar los puntos que se van desarrollando del sprint.
+
 3. Que debemos continuar haciendo: el respeto a las ideas -   la primicia es  actuar siempre en concenso y tomando las decisiones en beneficio del equipo.
+
 4. Que debemos hacer menos: dejar de posponer las actividades -  dejar de crear  tareas generales  o muy amplias y crear mas bien tareas mas especificas.
-8:12
+
 5. Que debemos dejar de hacer: dejar pasar el tiempo y dejar la tarea sin realizar   -   posponer las actividades
